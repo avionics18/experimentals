@@ -1,0 +1,23 @@
+#recent-posts{
+  background-color: #ebebeb;
+  padding: 20px 20px 20px 20px;
+  overflow-x: auto;
+}
+#recent-posts .card-wrapper{
+  min-width: 350px;
+}
+#recent-posts .card{
+  margin-right: 20px;
+  overflow: hidden;
+}
+#recent-posts .card .card-image{
+  background-color: var(--primary);
+  height: 180px;
+}
+
+
+@media (max-width: 400px){
+  #recent-posts .card-wrapper{
+    min-width: 280px;
+  }
+}
