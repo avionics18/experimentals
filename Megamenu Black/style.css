@@ -1,6 +1,9 @@
 body{
   background-color: #f4f4f4;
 }
+.bg-black{
+	background-color: #000;
+}
 header{
   background-color: #000;
   padding-top: 40px;
@@ -10,6 +13,12 @@ header{
   font-weight: bold;
   margin: 0;
   padding-bottom: 20px;
+}
+.my-custom-navbar{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow-x: auto;
 }
 .my-custom-navbar li{
   margin-left: 10px;
@@ -32,7 +41,6 @@ header{
   width: 100%;
   left: 0;
   background: linear-gradient(45deg, #111, #333);
-  border-top: 1px solid #fff;
   padding: 20px 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   display: none;
@@ -53,12 +61,80 @@ header{
   }
 }
 
+.my-custom-navbar::-webkit-scrollbar {
+    height: 5px !important;
+}
+.my-custom-navbar::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+.my-custom-navbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 767.98px){
+	.my-custom-navbar{
+		justify-content: flex-start;
+	}
+}
 
 
 
+/*Tabs content*/
+.wrapper-tabs{
+	min-height: 400px;
+	overflow: auto;
+}
+.wrapper-tabs .btn{
+	margin-bottom: 10px;
+}
+.wrapper-tabs .btn-outline-light:focus{
+	background-color: var(--light);
+	color: var(--dark);
+}
+.wrapper-tabs .btn-outline-info:focus{
+	background-color: var(--info);
+	color: var(--light);
+}
+.wrapper-tabs .btn-outline-success:focus{
+	background-color: var(--success);
+	color: var(--light);
+}
+.notices-tab{
+	display: block;
+	z-index: 15;
+	background: linear-gradient(45deg,#000,#333);
+	border-top: 3px solid var(--light);
+}
+.announcements-tab{
+	display: none;
+	z-index: 16;
+	animation: fade 0.25s;
+	background: linear-gradient(45deg,#333,#000);
+	border-top: 3px solid var(--info);
+}
+.tenders-tab{
+	display: none;
+	z-index: 17;
+	animation: fade 0.25s;
+	background: linear-gradient(45deg,#000,#333);
+	border-top: 3px solid var(--success);
+}
+.announcements-btn:focus ~ .announcements-tab{
+	display: block;
+}
+.tenders-btn:focus ~ .tenders-tab{
+	display: block;
+}
 
-
-
-
-
-
+@keyframes fade {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
