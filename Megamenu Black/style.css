@@ -6,13 +6,12 @@ body{
 }
 header{
   background-color: #000;
-  padding-top: 40px;
   position: relative;
 }
 .brand-name{
   font-weight: bold;
   margin: 0;
-  padding-bottom: 20px;
+  padding: 40px 0 30px 0;
 }
 .my-custom-navbar{
 	width: 100%;
@@ -70,7 +69,7 @@ header{
 }
 .my-custom-navbar::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #ccc;
+    background-color: #999;
     border-radius: 10px;
 }
 
@@ -85,11 +84,35 @@ header{
 
 /*Tabs content*/
 .wrapper-tabs{
-	min-height: 400px;
-	overflow: auto;
+	height: 400px;
 }
+.wrapper-tabs ul{
+	height: 330px;
+	overflow-y: scroll;
+}
+
 .wrapper-tabs .btn{
 	margin-bottom: 10px;
+}
+.indicator{
+	height: 3px;
+	background-color: #fff;
+	margin-top: 10px;
+	position: relative;
+}
+.indicator::before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -8px;
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	clip-path: polygon(100% 0, 0 0, 100% 100%);
+	transform: rotate(-45deg);
+	z-index: 50;
+	transition: 0.35s;
 }
 .wrapper-tabs .btn-outline-light:focus{
 	background-color: var(--light);
@@ -107,28 +130,42 @@ header{
 	display: block;
 	z-index: 15;
 	background: linear-gradient(45deg,#000,#333);
-	border-top: 3px solid var(--light);
 }
 .announcements-tab{
 	display: none;
 	z-index: 16;
 	animation: fade 0.25s;
 	background: linear-gradient(45deg,#333,#000);
-	border-top: 3px solid var(--info);
 }
 .tenders-tab{
 	display: none;
 	z-index: 17;
 	animation: fade 0.25s;
 	background: linear-gradient(45deg,#000,#333);
-	border-top: 3px solid var(--success);
 }
+/*-----------------------------------------------------*/
 .announcements-btn:focus ~ .announcements-tab{
 	display: block;
 }
+.announcements-btn:focus ~ .indicator{
+	background-color: var(--info);
+}
+.announcements-btn:focus ~ .indicator::before{
+	left: 110px;
+	background-color: var(--info);
+}
+/*-----------------------------------------------------*/
 .tenders-btn:focus ~ .tenders-tab{
 	display: block;
 }
+.tenders-btn:focus ~ .indicator{
+	background-color: var(--success);
+}
+.tenders-btn:focus ~ .indicator::before{
+	left: 240px;
+	background-color: var(--success);
+}
+/*-----------------------------------------------------*/
 
 @keyframes fade {
 	from{
