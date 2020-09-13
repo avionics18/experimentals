@@ -1,5 +1,5 @@
 *{
-  /* outline: 1px solid rgba(255,0,0,0.1); */
+   /*outline: 1px solid rgba(255,0,0,0.1); */
 }
 
 .header-top a{
@@ -24,8 +24,11 @@
 }
 
 
-.main-navbar .container{
-  overflow: scroll;
+.main-navbar{
+  position: relative;
+}
+.main-navbar > .container{
+  overflow: auto;
 }
 
 
@@ -91,20 +94,6 @@
 .footer-top .main-wrapper ul a:hover{
   color: #fff;
 }
-
-
-@media (max-width: 640px){
-  .footer-top .main-wrapper .seg1, .footer-top .main-wrapper .seg2{
-    display: initial;
-  }
-}
-@media (max-width: 430px){
-  .footer-top .main-wrapper{
-    display: initial;
-  }
-}
-
-
 footer{
   background: #222;
   padding: 40px 0;
@@ -115,3 +104,34 @@ footer p{
   margin: 0;
   color: #999;
 }
+
+
+
+/*------------Media Queries-----------*/
+
+@media (max-width: 767.98px){
+  .main-navbar > .container::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 80px;
+    height: 57px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+  }
+  .main-navbar nav > a:last-Child{
+    padding-right: 80px;
+  }
+
+  .footer-top .main-wrapper .seg1, .footer-top .main-wrapper .seg2{
+    display: initial;
+  }
+}
+
+@media (max-width: 575.98px){
+  .footer-top .main-wrapper{
+    display: initial;
+  }
+}
+
