@@ -23,6 +23,12 @@
   background-color: var(--secondary);
 }
 
+
+.main-navbar .container{
+  overflow: scroll;
+}
+
+
 .my-card-img{
   height: 140px;
   background-color: var(--secondary);
