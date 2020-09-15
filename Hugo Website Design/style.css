@@ -1,0 +1,35 @@
+/* Utilities */
+.bg-lighter{
+  background-color: #ebebeb;
+}
+.ff-serif{
+  font-family: serif;
+}
+/* ------------------- */
+
+.site-title{
+  font-family: serif;
+  margin-bottom: 0;
+  padding: 35px 0;
+}
+
+.sidebar-card{
+  background-color: var(--light);
+  padding: 1rem;
+}
+
+#footer-top{
+  background-color: #333;
+}
+#footer-bottom{
+  background-color: #000;
+}
+#footer-bottom p{
+  color: #aaa;
+}
+
+
+
+
+
+
