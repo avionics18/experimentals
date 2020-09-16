@@ -1,21 +1,50 @@
+*{
+  /*outline: 1px solid rgba(255,0,0,0.2);*/
+}
 /* Utilities */
 .bg-lighter{
   background-color: #ebebeb;
 }
+.text-lighter{
+  color: #ddd;
+}
+a.text-lighter:hover{
+  color: white;
+}
 .ff-serif{
   font-family: serif;
 }
+.list-style-type-square{
+  list-style-type: square;
+}
 /* ------------------- */
 
-.site-title{
-  font-family: serif;
-  margin-bottom: 0;
-  padding: 35px 0;
-}
 
-.sidebar-card{
-  background-color: var(--light);
-  padding: 1rem;
+/*Main Navbar*/
+#main-navbar .nav::before{
+  content: '';
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  background: linear-gradient(90deg, transparent 0%, var(--dark) 70%, var(--dark) 100%);
+}
+/*Blog Post Lists*/
+.blog-post-lists a:hover{
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(0,0,0,0.5);
+}
+.blog-post-lists .card-img{
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  position: relative;
+  bottom: 5px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 #footer-top{
@@ -27,9 +56,3 @@
 #footer-bottom p{
   color: #aaa;
 }
-
-
-
-
-
-
