@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Website</title>
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+      <div class="col-lg-3 col-md-4 col-sm-5 col-6 bg-primary">
+        <div class="brand bg-dark p-4">
+          <h1 class="text-white font-weight-bold text-center">Liquid Matter Contents 101</h1>
+        </div>
+        <!-- /.brand -->
+        <div class="toc p-4 border-top border-lighter overflow-auto" id="sidebar-accordion">
+          <h4 class="text-white font-weight-bold">Basics</h4>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction-ul">
+            <h5 class="text-white">Introduction</h5>
+            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+          </div>
+          <ul class="collapse show list-unstyled mb-0 pl-3" id="introduction-ul" data-parent="#sidebar-accordion">
+            <li><a href="operators.html" class="text-lighter">Operators</a></li>
+            <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
+            <li><a href="#!" class="text-lighter">Types</a></li>
+            <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
+            <li><a href="#!" class="text-lighter">Whitespace control</a></li>
+          </ul>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags-ul">
+            <h5 class="text-white">Tags</h5>
+            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+          </div>
+          <ul class="collapse list-unstyled mb-0 pl-3" id="tags-ul" data-parent="#sidebar-accordion">
+            <li><a href="#!" class="text-lighter">Comment</a></li>
+            <li><a href="#!" class="text-lighter">Control Flow</a></li>
+            <li><a href="#!" class="text-lighter">Iteration</a></li>
+            <li><a href="#!" class="text-lighter">Raw</a></li>
+            <li><a href="#!" class="text-lighter">Variable</a></li>
+          </ul>
+          <!-- Dublicating the lists -->
+          <h4 class="text-white font-weight-bold pt-3">Theming</h4>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction2-ul">
+            <h5 class="text-white">Introduction II</h5>
+            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+          </div>
+          <ul class="collapse list-unstyled mb-0 pl-3" id="introduction2-ul" data-parent="#sidebar-accordion">
+            <li><a href="#!" class="text-lighter">Operators</a></li>
+            <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
+            <li><a href="#!" class="text-lighter">Types</a></li>
+            <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
+            <li><a href="#!" class="text-lighter">Whitespace control</a></li>
+          </ul>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags2-ul">
+            <h5 class="text-white">Tags II</h5>
+            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+          </div>
+          <ul class="collapse list-unstyled mb-0 pl-3" id="tags2-ul" data-parent="#sidebar-accordion">
+            <li><a href="#!" class="text-lighter">Comment</a></li>
+            <li><a href="#!" class="text-lighter">Control Flow</a></li>
+            <li><a href="#!" class="text-lighter">Iteration</a></li>
+            <li><a href="#!" class="text-lighter">Raw</a></li>
+            <li><a href="#!" class="text-lighter">Variable</a></li>
+          </ul>
+          <h4 class="text-white font-weight-bold pt-3">Deployment</h4>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction3-ul">
+            <h5 class="text-white">Introduction III</h5>
+            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+          </div>
+          <ul class="list-unstyled mb-0 pl-3 collapse" id="introduction3-ul" data-parent="#sidebar-accordion">
+            <li><a href="#!" class="text-lighter">Operators</a></li>
+            <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
+            <li><a href="#!" class="text-lighter">Types</a></li>
+            <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
+            <li><a href="#!" class="text-lighter">Whitespace control</a></li>
+          </ul>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags3-ul">
+            <h5 class="text-white">Tags III</h5>
+            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+          </div>
+          <ul class="list-unstyled mb-0 pl-3 collapse" id="tags3-ul" data-parent="#sidebar-accordion">
+            <li><a href="#!" class="text-lighter">Comment</a></li>
+            <li><a href="#!" class="text-lighter">Control Flow</a></li>
+            <li><a href="#!" class="text-lighter">Iteration</a></li>
+            <li><a href="#!" class="text-lighter">Raw</a></li>
+            <li><a href="#!" class="text-lighter">Variable</a></li>
+          </ul>
+          <!-- End of duplication -->
+        </div>
+        <!-- /.toc -->
+      </div>
+      <!-- /.col-4 -->
+      <div class="col-lg-9 col-md-8 col-sm-7 col-6">
+        <div class="main-content bg-lighter py-4">
+          <h1 class="border-bottom border-primary mb-4 pb-2">Introduction</h1>
+          <p class="mb-5">Liquid code can be categorized into <a href="#">objects</a>, <a href="#">tags</a>, and <a href="#">filters</a>.</p>
+          <h2 class="border-bottom mb-4 pb-2">Objects</h2>
+          <p><strong>Objects</strong> tell Liquid where to show content on a page. Objects and variable names are denoted by double curly braces: <kbd>{{</kbd> and <kbd>}}</kbd>.</p>
+          <div class="card bg-dark text-light my-4">
+            <div class="card-header text-secondary text-uppercase">Input</div>
+            <div class="card-body">
+              <pre class="text-light"><code>{{ <span class="text-warning">page.title</span> }}</code></pre>
+            </div>
+          </div>
+          <div class="card bg-dark text-light my-4">
+            <div class="card-header text-secondary text-uppercase">Output</div>
+            <div class="card-body">
+              <pre class="text-light m-0 p-0"><code>Introduction</code></pre>
+            </div>
+          </div>
+          <p class="mb-5">In this case, Liquid is rendering the content of an object called <kbd>page.title</kbd>, and that object contains the text <kbd>Introduction</kbd>.</p>
+          <h2 class="border-bottom mb-4 pb-2">Tags</h2>
+          <p><b>Tags</b> create the logic and control flow for templates. They are denoted by curly braces and percent signs: <kbd>{%</kbd> and <kbd>%}</kbd>.</p>
+          <p>The markup used in tags does not produce any visible text. This means that you can assign variables and create conditions and loops without showing any of the Liquid logic on the page.</p>
+          <div class="card bg-dark text-light my-4">
+            <div class="card-header text-secondary text-uppercase">Input</div>
+            <div class="card-body">
+              <pre class="text-light"><code>{% if <span class="text-warning">users</span> %}<br></code>  <code>  {{ <span class="text-warning">page.title</span> }}</code><br><code>{% endif %}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-8 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+
+
+
+
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="./dist/jquery.min.js"></script>
+  <script src="./dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

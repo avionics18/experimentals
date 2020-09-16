@@ -1,0 +1,45 @@
+*{
+  /* outline: 1px solid rgba(255,0,0,0.2); */
+}
+.border-lighter{
+  border-color: rgba(255,255,255,0.3) !important;
+}
+.text-lighter{
+  color: #ccc;
+}
+a.text-lighter:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* Custom Styling */
+.toc{
+	height: 75vh;
+}
+.toc h5{
+	font-weight: 600;
+}
+.toc a{
+	text-decoration: none !important;
+}
+.toc-menu-item:hover{
+	cursor: pointer;
+}
+
+
+.main-content{
+	height: 100vh;
+	overflow: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.main-content p{
+  line-height: 1.9;
+}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4{
+  font-family: serif;
+  font-weight: bold;
+  color: var(--primary);
+}
