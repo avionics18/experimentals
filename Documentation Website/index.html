@@ -13,18 +13,19 @@
   
   <div class="container-fluid px-0">
     <div class="row no-gutters">
-      <div class="col-lg-3 col-md-4 col-sm-5 col-6 bg-primary">
+      <div class="col-lg-3 col-md-4 col-sm-5 col-6 bg-primary vh-100 overflow-auto">
         <div class="brand bg-dark p-4">
-          <h1 class="text-white font-weight-bold text-center">Liquid Matter Contents 101</h1>
+          <h1 class="text-white font-weight-bold text-center">Liquid Template Engine 101</h1>
         </div>
         <!-- /.brand -->
-        <div class="toc p-4 border-top border-lighter overflow-auto" id="sidebar-accordion">
+        <div class="toc p-4 border-top border-lighter" id="sidebar-accordion">
           <h4 class="text-white font-weight-bold">Basics</h4>
           <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction-ul">
             <h5 class="text-white">Introduction</h5>
             <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
           </div>
           <ul class="collapse show list-unstyled mb-0 pl-3" id="introduction-ul" data-parent="#sidebar-accordion">
+            <li><a href="index.html" class="active">Introduction</a></li>
             <li><a href="operators.html" class="text-lighter">Operators</a></li>
             <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
             <li><a href="#!" class="text-lighter">Types</a></li>
@@ -42,60 +43,162 @@
             <li><a href="#!" class="text-lighter">Raw</a></li>
             <li><a href="#!" class="text-lighter">Variable</a></li>
           </ul>
-          <!-- Dublicating the lists -->
-          <h4 class="text-white font-weight-bold pt-3">Theming</h4>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction2-ul">
-            <h5 class="text-white">Introduction II</h5>
+          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#filters-ul">
+            <h5 class="text-white">Filters</h5>
             <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
           </div>
-          <ul class="collapse list-unstyled mb-0 pl-3" id="introduction2-ul" data-parent="#sidebar-accordion">
-            <li><a href="#!" class="text-lighter">Operators</a></li>
-            <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
-            <li><a href="#!" class="text-lighter">Types</a></li>
-            <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
-            <li><a href="#!" class="text-lighter">Whitespace control</a></li>
+          <ul class="collapse list-unstyled mb-0 pl-3" id="filters-ul" data-parent="#sidebar-accordion">
+            <li>
+              <a href="#!" class="text-lighter">abs</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">append</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">at_least</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">at_most</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">capitalize</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">ceil</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">compact</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">concat</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">date</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">default</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">divided_by</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">downcase</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">escape</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">escape_once</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">first</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">floor</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">join</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">last</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">lstrip</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">map</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">minus</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">modulo</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">newline_to_br</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">plus</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">prepend</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">remove</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">remove_first</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">replace</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">replace_first</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">reverse</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">round</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">rstrip</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">size</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">slice</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">sort</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">sort_natural</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">split</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">strip</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">strip_html</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">strip_newlines</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">times</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">truncate</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">truncatewords</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">uniq</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">upcase</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">url_decode</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">url_encode</a>
+            </li>
+            <li>
+              <a href="#!" class="text-lighter">where</a>
+            </li>
           </ul>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags2-ul">
-            <h5 class="text-white">Tags II</h5>
-            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
-          </div>
-          <ul class="collapse list-unstyled mb-0 pl-3" id="tags2-ul" data-parent="#sidebar-accordion">
-            <li><a href="#!" class="text-lighter">Comment</a></li>
-            <li><a href="#!" class="text-lighter">Control Flow</a></li>
-            <li><a href="#!" class="text-lighter">Iteration</a></li>
-            <li><a href="#!" class="text-lighter">Raw</a></li>
-            <li><a href="#!" class="text-lighter">Variable</a></li>
-          </ul>
-          <h4 class="text-white font-weight-bold pt-3">Deployment</h4>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction3-ul">
-            <h5 class="text-white">Introduction III</h5>
-            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
-          </div>
-          <ul class="list-unstyled mb-0 pl-3 collapse" id="introduction3-ul" data-parent="#sidebar-accordion">
-            <li><a href="#!" class="text-lighter">Operators</a></li>
-            <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
-            <li><a href="#!" class="text-lighter">Types</a></li>
-            <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
-            <li><a href="#!" class="text-lighter">Whitespace control</a></li>
-          </ul>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags3-ul">
-            <h5 class="text-white">Tags III</h5>
-            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
-          </div>
-          <ul class="list-unstyled mb-0 pl-3 collapse" id="tags3-ul" data-parent="#sidebar-accordion">
-            <li><a href="#!" class="text-lighter">Comment</a></li>
-            <li><a href="#!" class="text-lighter">Control Flow</a></li>
-            <li><a href="#!" class="text-lighter">Iteration</a></li>
-            <li><a href="#!" class="text-lighter">Raw</a></li>
-            <li><a href="#!" class="text-lighter">Variable</a></li>
-          </ul>
-          <!-- End of duplication -->
         </div>
         <!-- /.toc -->
       </div>
       <!-- /.col-4 -->
-      <div class="col-lg-9 col-md-8 col-sm-7 col-6">
-        <div class="main-content bg-lighter py-4">
+      <div class="col-lg-9 col-md-8 col-sm-7 col-6 vh-100 overflow-auto">
+        <div class="main-content py-4">
           <h1 class="border-bottom border-primary mb-4 pb-2">Introduction</h1>
           <p class="mb-5">Liquid code can be categorized into <a href="#">objects</a>, <a href="#">tags</a>, and <a href="#">filters</a>.</p>
           <h2 class="border-bottom mb-4 pb-2">Objects</h2>

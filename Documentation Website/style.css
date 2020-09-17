@@ -15,14 +15,15 @@ a.text-lighter:hover{
 
 
 /* Custom Styling */
-.toc{
-	height: 75vh;
-}
 .toc h5{
 	font-weight: 600;
 }
 .toc a{
 	text-decoration: none !important;
+}
+.toc ul a.active{
+  color: var(--warning);
+  font-weight: bold;
 }
 .toc-menu-item:hover{
 	cursor: pointer;
@@ -30,10 +31,9 @@ a.text-lighter:hover{
 
 
 .main-content{
-	height: 100vh;
-	overflow: auto;
 	padding-left: 100px;
 	padding-right: 100px;
+  background-color: #f4f4f4;
 }
 .main-content p{
   line-height: 1.9;
