@@ -1,2 +1,3 @@
 # experiments
-html css experimental website
+
+Collection of Experimental layouts and Web design projects.
