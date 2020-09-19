@@ -1,0 +1,70 @@
+/*clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);*/
+:root{
+	--main: #2a2c59;
+}
+
+/*utlities*/
+.bg-main{
+	background-color: var(--main);
+}
+.text-main{
+	color: var(--main);
+}
+.bg-lighter{
+	background-color: rgba(255,255,255,0.25);
+}
+
+.ff-serif{
+	font-family: serif;
+}
+
+
+
+
+/*==========CUSTOM STYLING==========*/
+
+/*Header*/
+.logo{
+	width: 100px;
+	height: 100px;
+	background-color: var(--light);
+	border-radius: 150px;
+}
+
+/*Carousel*/
+.hero{
+	height: 450px;
+}
+.hero-item{
+	background-color: #43468f;
+	height: 500px;
+	position: relative;
+	top: 60px;
+}
+
+
+/*Main Content*/
+.main-content{
+	margin-top: 180px;
+	/*background-color: #ebebeb;*/
+}
+.special-heading::before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	position: relative;
+	top: 20px;
+	z-index: -1;
+}
+.card-placeholder{
+	width: 100px;
+	height: 100px;
+	background-color: #ddd;
+}
+.twitter-feed-wrapper{
+	height: 500px;
+	overflow: auto;
+}

@@ -11,10 +11,16 @@ a.text-lighter:hover{
   color: white;
   text-decoration: none;
 }
+.left-0{
+  left: 0 !important;
+}
 
 
 
 /* Custom Styling */
+.mobile-toc-toggle{
+  display: none;
+}
 .toc h5{
 	font-weight: 600;
 }
@@ -42,4 +48,43 @@ a.text-lighter:hover{
   font-family: serif;
   font-weight: bold;
   color: var(--primary);
+}
+
+
+
+
+
+/*~~~~~~ Media Queries ~~~~~~*/
+@media (max-width: 991.98px){
+  .main-content{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+
+@media (max-width: 767.98px){
+  #sidebar{
+    width: 250px !important;
+    max-width: none;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 5;
+    transition: left 0.25s ease-out;
+  }
+  .mobile-toc-toggle{
+    display: inline-block;
+    position: absolute;
+    bottom: 100px;
+    right: -50px;
+  }
+  .brand-name{
+    font-size: 24px;
+  }
+  .main-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

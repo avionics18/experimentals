@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentation Website</title>
+  <title>Operators | Documentation Website</title>
   <!-- Bootstrap cdn -->
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,191 +15,197 @@
   
   <div class="container-fluid px-0">
     <div class="row no-gutters">
-      <div class="col-lg-3 col-md-4 col-sm-5 col-6 bg-primary vh-100 overflow-auto">
-        <div class="brand bg-dark p-4">
-          <h1 class="text-white font-weight-bold text-center">Liquid Template Engine 101</h1>
+      <div id="sidebar" class="col-lg-3 col-md-4 col-8 bg-primary">
+        <button onclick="toggleSidebar()" class="mobile-toc-toggle btn btn-primary rounded-0 shadow">
+          <i class="fa fa-outdent"></i><br>
+          <span class="small font-weight-bold">TOC</span>
+        </button>
+        <div class="vh-100 overflow-auto">
+          <div class="brand bg-dark p-4">
+            <h1 class="brand-name text-white font-weight-bold text-center">Liquid Template Engine 101</h1>
+          </div>
+          <!-- /.brand -->
+          <div class="toc p-4 border-top border-lighter" id="sidebar-accordion">
+            <p><a href="../index.html" class="btn btn-dark btn-sm">&larr; BACK TO HOME</a></p>
+            <div class="toc-menu-item d-flex justify-content-between pt-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#overview-ul">
+              <h5 class="text-white">Overview</h5>
+              <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+            </div>
+            <ul class="collapse show list-unstyled mb-0 pl-3" id="overview-ul" data-parent="#sidebar-accordion">
+              <li><a href="index.html" class="text-lighter">Introduction</a></li>
+              <li><a href="operators.html" class="active">Operators</a></li>
+              <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
+              <li><a href="#!" class="text-lighter">Types</a></li>
+              <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
+              <li><a href="#!" class="text-lighter">Whitespace control</a></li>
+            </ul>
+            <div class="toc-menu-item d-flex justify-content-between pt-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags-ul">
+              <h5 class="text-white">Tags</h5>
+              <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+            </div>
+            <ul class="collapse list-unstyled mb-0 pl-3" id="tags-ul" data-parent="#sidebar-accordion">
+              <li><a href="#!" class="text-lighter">Comment</a></li>
+              <li><a href="#!" class="text-lighter">Control Flow</a></li>
+              <li><a href="#!" class="text-lighter">Iteration</a></li>
+              <li><a href="#!" class="text-lighter">Raw</a></li>
+              <li><a href="#!" class="text-lighter">Variable</a></li>
+            </ul>
+            <div class="toc-menu-item d-flex justify-content-between pt-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#filters-ul">
+              <h5 class="text-white">Filters</h5>
+              <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
+            </div>
+            <ul class="collapse list-unstyled mb-0 pl-3" id="filters-ul" data-parent="#sidebar-accordion">
+              <li>
+                <a href="#!" class="text-lighter">abs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">append</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">at_least</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">at_most</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">capitalize</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">ceil</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">compact</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">concat</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">date</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">default</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">divided_by</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">downcase</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">escape</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">escape_once</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">first</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">floor</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">join</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">last</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">lstrip</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">map</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">minus</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">modulo</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">newline_to_br</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">plus</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">prepend</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">remove</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">remove_first</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">replace</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">replace_first</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">reverse</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">round</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">rstrip</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">size</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">slice</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">sort</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">sort_natural</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">split</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">strip</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">strip_html</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">strip_newlines</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">times</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">truncate</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">truncatewords</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">uniq</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">upcase</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">url_decode</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">url_encode</a>
+              </li>
+              <li>
+                <a href="#!" class="text-lighter">where</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.toc -->
         </div>
-        <!-- /.brand -->
-        <div class="toc p-4 border-top border-lighter" id="sidebar-accordion">
-          <h4 class="text-white font-weight-bold">Basics</h4>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#introduction-ul">
-            <h5 class="text-white">Introduction</h5>
-            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
-          </div>
-          <ul class="collapse show list-unstyled mb-0 pl-3" id="introduction-ul" data-parent="#sidebar-accordion">
-            <li><a href="index.html" class="text-lighter">Introduction</a></li>
-            <li><a href="operators.html" class="active">Operators</a></li>
-            <li><a href="#!" class="text-lighter">Truthy &amp; Falsy</a></li>
-            <li><a href="#!" class="text-lighter">Types</a></li>
-            <li><a href="#!" class="text-lighter">Variations of Liquid</a></li>
-            <li><a href="#!" class="text-lighter">Whitespace control</a></li>
-          </ul>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#tags-ul">
-            <h5 class="text-white">Tags</h5>
-            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
-          </div>
-          <ul class="collapse list-unstyled mb-0 pl-3" id="tags-ul" data-parent="#sidebar-accordion">
-            <li><a href="#!" class="text-lighter">Comment</a></li>
-            <li><a href="#!" class="text-lighter">Control Flow</a></li>
-            <li><a href="#!" class="text-lighter">Iteration</a></li>
-            <li><a href="#!" class="text-lighter">Raw</a></li>
-            <li><a href="#!" class="text-lighter">Variable</a></li>
-          </ul>
-          <div class="toc-menu-item d-flex justify-content-between pt-3 ml-3 mb-2 border-bottom border-lighter" data-toggle="collapse" data-target="#filters-ul">
-            <h5 class="text-white">Filters</h5>
-            <img src="./assets/svgs/caret-bottom-white.svg" alt="caret-bottom">
-          </div>
-          <ul class="collapse list-unstyled mb-0 pl-3" id="filters-ul" data-parent="#sidebar-accordion">
-            <li>
-              <a href="#!" class="text-lighter">abs</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">append</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">at_least</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">at_most</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">capitalize</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">ceil</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">compact</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">concat</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">date</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">default</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">divided_by</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">downcase</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">escape</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">escape_once</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">first</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">floor</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">join</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">last</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">lstrip</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">map</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">minus</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">modulo</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">newline_to_br</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">plus</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">prepend</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">remove</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">remove_first</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">replace</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">replace_first</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">reverse</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">round</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">rstrip</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">size</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">slice</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">sort</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">sort_natural</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">split</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">strip</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">strip_html</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">strip_newlines</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">times</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">truncate</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">truncatewords</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">uniq</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">upcase</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">url_decode</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">url_encode</a>
-            </li>
-            <li>
-              <a href="#!" class="text-lighter">where</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.toc -->
       </div>
       <!-- /.col-4 -->
-      <div class="col-lg-9 col-md-8 col-sm-7 col-6 vh-100 overflow-auto">
+      <div class="col-lg-9 col-md-8 col-12 vh-100 overflow-auto">
         <div class="main-content py-4">
           <h1 class="border-bottom border-primary mb-4 pb-2">Operators</h1>
           <p class="mb-5">Liquid includes many logical and comparison operators.</p>
@@ -274,6 +282,9 @@
   <!-- JS, Popper.js, and jQuery -->
   <script src="./dist/jquery.min.js"></script>
   <script src="./dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Javascript -->
+  <script src="main.js"></script>
 
 
 </body>
