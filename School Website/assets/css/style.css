@@ -52,22 +52,150 @@
 	border-radius: 150px;
 }
 
+
+
+/*~~~~~ NAVBAR ~~~~~*/
+#main-nav-wrapper a{
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+.mobile-nav,
+.close-item {
+  display: none;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.nav .fa {
+  margin-left: 5px;
+}
+.nav-item {
+  position: relative;
+}
+.nav-link{
+  display: block;
+  padding: 14px 18px;
+  transition: 0.25s;
+}
+.dp-link{
+  display: block;
+  padding: 8px 12px;
+  transition: 0.25s;
+}
+.nav-item:hover,
+.nav-item .active {
+  background-color: #e4e4e4;
+}
+
+/* Dropdown Menu */
+.dp-menu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  border-left: 3px solid var(--main-light);
+  z-index: 2;
+}
+.dp-item{
+  position: relative;
+}
+.dp-item:hover/*,
+.dp-item:hover > .dp-link*/ {
+  background-color: #e4e4e4;
+}
+
+.level-1 {
+  display: none;
+  background-color: var(--light);
+}
+.level-2 {
+  display: none;
+  top: 0px;
+  left: 100%;
+  font-size: 0.9rem;
+  background-color: var(--light);
+}
+
+.nav-item:hover > .level-1 {
+  display: block;
+}
+.dp-item:hover > .level-2 {
+  display: block;
+}
+
+
+@media (max-width: 575.98px) {
+  .nav {
+    display: block;
+    background-color: var(--light);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    top: 0;
+    z-index: 100;
+    transition: 0.25s;
+  }
+  #main-nav {
+    left: -100%;
+  }
+  li.close-item {
+    display: block;
+    padding: 20px 18px;
+    text-align: right;
+  }
+  .dp-menu {
+    width: 100% !important;
+    position: static;
+    border: none;
+  }
+  .level-1{
+    background-color: #ddd;
+  }
+  .level-2{
+    background-color: #ccc;
+  }
+  .level-1 > .dp-item:hover{
+    background-color: #9d9d9d;
+  }
+  .level-2 > .dp-item:hover{
+    background-color: #e4e4e4;
+  }
+  .level-1 > .dp-item > .dp-link {
+    padding-left: 28px;
+  }
+  .level-2 > .dp-item > .dp-link {
+    padding-left: 38px;
+  }
+  .dp-menu a:hover{
+    color: #e4e4e4;
+  }
+  .fa-caret-right {
+    transform: rotate(90deg);
+  }
+}
+
+
+
+
 /*Carousel*/
 .hero{
-	height: 450px;
+  height: 450px;
 }
 .hero-item{
-	background-color: #43468f;
-	height: 500px;
-	position: relative;
-	top: 60px;
+  background-color: #333;
+  height: 500px;
+  position: relative;
+  top: 60px;
 }
+
 
 
 /*Main Content*/
 .main-content{
 	margin-top: 180px;
-	/*background-color: #ebebeb;*/
 }
 /*COMMON*/
 .special-heading::before{
