@@ -182,20 +182,20 @@
 
 /*Carousel*/
 .hero{
-  height: 450px;
+  height: 350px;
 }
 .hero-item{
   background-color: #333;
-  height: 500px;
+  height: 400px;
   position: relative;
-  top: 60px;
+  top: 50px;
 }
 
 
 
 /*Main Content*/
 .main-content{
-	margin-top: 180px;
+	margin-top: 130px;
 }
 /*COMMON*/
 .special-heading::before{
