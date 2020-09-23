@@ -109,6 +109,9 @@
 .level-1 {
   display: none;
   background-color: var(--light);
+  animation: fade 0.25s ease;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
 }
 .level-2 {
   display: none;
@@ -116,6 +119,9 @@
   left: 100%;
   font-size: 0.9rem;
   background-color: var(--light);
+  animation: fade 0.25s ease;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 .nav-item:hover > .level-1 {
@@ -124,6 +130,18 @@
 .dp-item:hover > .level-2 {
   display: block;
 }
+
+@keyframes fade{
+  from{
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 
 
 @media (max-width: 575.98px) {
