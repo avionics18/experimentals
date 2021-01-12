@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Calculator</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    html, body{
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    .container{
+      width: 80%;
+      margin: auto;
+    }
+    
+    /* Heading */
+    .heading{
+      background-color: #ebebeb;
+      border-bottom: 5px solid #ddd;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+    .heading h1{
+      font-family: sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #444;
+    }
+    
+    
+    /* Calculator Form */
+    input[type=button]{
+      width: 100%;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border: none;
+    }
+    input[type=button]:focus{
+      outline: none;
+    }
+    .numbers{
+      background-color: #ebebeb;
+      border-bottom: 3px solid #ccc !important;
+      border-radius: 3px;
+    }
+    .numbers:hover{
+      background-color: #e3e3e3;
+    }
+    .numbers:active{
+      border-top: 3px solid #ebebeb;
+      border-bottom-width: 0 !important;
+    }
+    .operators{
+      background-color: rgba(255, 214, 148, 1);
+      border-bottom: 3px solid rgba(201, 154, 79, 1) !important;
+      border-radius: 3px;
+    }
+    .operators:hover{
+      background-color: rgba(255, 196, 102, 0.8);
+    }
+    .operators:active{
+      border-top: 3px solid rgba(255, 196, 102, 0.8);
+      border-bottom-width: 0 !important;
+    }
+    #equals{
+      background-color: rgba(255, 202, 117, 1);
+      border-bottom: 3px solid rgba(201, 154, 79, 1) !important;
+      border-radius: 3px;
+    }
+    #equals:hover{
+      background-color: rgba(255, 196, 102, 0.8);
+    }
+    #equals:active{
+      border-top: 3px solid rgba(255, 196, 102, 0.8);
+      border-bottom-width: 0 !important;
+    }
+    #clear{
+      background-color: rgba(255, 214, 148, 1);
+      border-bottom: 3px solid rgba(201, 154, 79, 1) !important;
+      border-radius: 3px;
+    }
+    #clear:hover{
+      background-color: rgba(255, 196, 102, 0.8);
+    }
+    #clear:active{
+      border-top: 3px solid rgba(255, 196, 102, 0.8);
+      border-bottom-width: 0 !important;
+    }
+  </style>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="heading">
+    <div class="container">
+      <h1>JS Calculator</h1>
+    </div>
+  </section>
+  
+  <div class="container">
+    <form name="calculator">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" name="display" id="display" disabled>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="one" value="1" onclick="calculator.display.value += '1'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="two" value="2" onclick="calculator.display.value += '2'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="three" value="3" onclick="calculator.display.value += '3'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="plus" value="+" onclick="calculator.display.value += '+'" class="operators">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="four" value="4" onclick="calculator.display.value += '4'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="five" value="5" onclick="calculator.display.value += '5'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="six" value="6" onclick="calculator.display.value += '6'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="minus" value="-" onclick="calculator.display.value += '-'" class="operators">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="seven" value="7" onclick="calculator.display.value += '7'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="eight" value="8" onclick="calculator.display.value += '8'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="nine" value="9" onclick="calculator.display.value += '9'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="multiply" value="x" onclick="calculator.display.value += '*'" class="operators">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="clear" value="C" onclick="calculator.display.value = ''" id="clear">
+          </td>
+          <td>
+            <input type="button" name="zero" value="0" onclick="calculator.display.value += '0'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="point" value="." onclick="calculator.display.value += '.'" class="numbers">
+          </td>
+          <td>
+            <input type="button" name="divide" value="/" onclick="calculator.display.value += '/'" class="operators">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input type="button" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)" id="equals">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br><br>
+    <a href="../index.html"><i class="fa fa-long-arrow-left"></i> Back To Home</a>
+  </div>
+  
+</body>
+</html>
