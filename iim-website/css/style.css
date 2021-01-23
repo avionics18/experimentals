@@ -140,7 +140,7 @@
     overflow: hidden;
   }
   #main-navbar .menu .sub-menu > li > a{
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
   #main-navbar .menu .sub-menu > li:last-Child > a{
     border-bottom: none;
