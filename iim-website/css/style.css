@@ -1,0 +1,192 @@
+/* Header TopMost */
+#header-top {
+  background-color: #303030;
+}
+#header-top a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgb(77, 77, 77);
+}
+#header-top a:last-child {
+  border-right: 1px solid #444;
+}
+#header-top a:hover {
+  color: rgb(228, 228, 228);
+}
+/*Desktop Navbar*/
+@media (min-width: 1200px){
+  /* Main Navbar */
+  #main-navbar {
+    background: linear-gradient(0deg, #ccc, #fff);
+  }
+  #main-navbar-toggler{
+    display: none;
+  }
+  /* .menu styling */
+  #main-navbar .menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  #main-navbar .menu > li {
+    font-size: 0.8rem;
+    border-left: 1px solid #bbb;
+    position: relative;
+  }
+  #main-navbar .menu > li:last-child {
+    border-right: 1px solid #bbb;
+  }
+  #main-navbar .menu > li > a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #main-navbar .menu > li:hover > a {
+    background-color: #fff;
+    color: var(--danger);
+  }
+  /* .sub-menu styling */
+  #main-navbar .menu .sub-menu {
+    position: absolute;
+    background: var(--dark);
+    color: #ccc;
+    font-size: 0.9rem;
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 3px solid var(--danger);
+    z-index: 2000;
+    display: none;
+  }
+  #main-navbar .menu > li:nth-last-child(-n+3) > .sub-menu {
+    right: 0;
+  }
+  #main-navbar .menu .sub-menu > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
+  #main-navbar .menu .sub-menu > li > a {
+    display: block;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.25s;
+  }
+  #main-navbar .menu .sub-menu > li:hover > a {
+    background-color: var(--danger);
+  }
+  /* .sub-menu > .sub-menu styling */
+  #main-navbar .menu .sub-menu .sub-menu {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    border: none;
+    border-left: 3px solid var(--danger);
+  }
+  #main-navbar .menu > li:nth-last-child(-n+3) > .sub-menu .sub-menu  {
+    left: unset;
+    right: 100%;
+    border-left: none;
+    border-right: 3px solid var(--danger);
+  }
+
+  /* Hover Game */
+  #main-navbar .menu li:hover > .sub-menu {
+    display: block;
+  }
+}
+/*Mobile View Navbar*/
+@media (max-width: 1199.98px){
+  #main-navbar{
+    background-color: #000;
+    padding: 10px 0;
+  }
+  #main-navbar-toggler{
+    display: block;
+  }
+  #main-navbar .menu{
+    display: none;
+    border-top: 1px solid var(--danger);
+    margin-top: 10px;
+  }
+  #main-navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  #main-navbar .menu a{
+    display: block;
+    padding: 4px 10px;
+    color: #cecece;
+    text-decoration: none;
+  }
+  #main-navbar .menu a:hover{
+    color: #fff;
+  }
+  #main-navbar .menu > li > a{
+    font-size: 1.2rem;
+  }
+  #main-navbar .menu .sub-menu{
+    display: none;
+    overflow: hidden;
+  }
+  #main-navbar .menu .sub-menu > li > a{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  #main-navbar .menu .sub-menu > li:last-Child > a{
+    border-bottom: none;
+  }
+  #main-navbar .menu > li > .sub-menu{
+    background-color: #222;
+    border-radius: 8px;
+  }
+  #main-navbar .menu > li > .sub-menu > li > .sub-menu{
+    background-color: #333;
+  }
+  #main-navbar .menu > li > .sub-menu > li > .sub-menu > li > .sub-menu{
+    background-color: #444;
+  }
+}
+
+/* Page Header */
+#page-header-cover {
+  padding: 60px 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://cdn-images.zety.com/pages/e7e410ce-7c41-4a03-b822-8cb4799916f2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#page-header-cover h1 > span{
+  color: var(--light);
+  background-color: rgba(255,255,255,0.25);
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 767.98px){
+  /*Page Header*/
+  #page-header-cover {
+    padding: 30px 0;
+    background-color: var(--dark);
+  }
+  #page-header-cover h1 > span{
+    color: var(--light);
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.2);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding: 0;
+  }
+}
