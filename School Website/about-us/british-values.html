@@ -21,7 +21,9 @@
 				<div class="row">
 					<div class="col-lg-9">
 						<div class="d-flex align-items-center">
-							<div class="logo mr-3"></div>
+							<div class="logo mr-sm-2 mr-3">
+								<img src="../assets/imgs/logo.png" alt="logo">
+							</div>
 							<div class="brand-name">
 								<h1 class="text-uppercase m-0 ff-serif"><a href="#" class="text-light text-decoration-none">Moorside High School</a></h1>
 							</div>
@@ -33,145 +35,204 @@
 		</div> <!-- container -->
 	</header>
 
-	<!-- NAVBAR -->
-	<div id="main-nav-wrapper" class="bg-light">
-	  <div class="container">
-	    <div class="mobile-nav text-right py-2 d-sm-none d-block">
-	      <button class="btn btn-secondary rounded-0 shadow-sm" onclick="toggleMenu(1)">Menu <i class="fa fa-bars"></i></button>
-	    </div> <!-- mobile-nav open button -->
-	    <ul class="nav" id="main-nav">
-	      <li class="close-item">
-	        <button class="btn btn-secondary rounded-0" onclick="toggleMenu(0)">Close &times;</button>
-	      </li> <!-- close-button -->
-	      <li class="nav-item">
-	        <a href="../index.html" class="nav-link">Home</a>
-	      </li>
-	      <li class="nav-item" id="about-us-nav">
-	      	<a href="#!" class="nav-link">About Us <i class="fa fa-caret-down"></i></a>
-	      	<!-- level-1 dropdwon-menu -->
-	      	<ul class="dp-menu level-1 small" style="min-width: 150px">
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">British Values</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Contact Us</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Governors</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Learning Support <i class="fa fa-caret-right"></i></a>
-	      			<div class="dp-menu level-2 small" style="min-width: 200px">
-	      				<div class="dp-item"><a href="#!" class="dp-link">Special Eductaion Needs Document</a></div>
-	      				<div class="dp-item"><a href="#!" class="dp-link">Moorside High School Local Offer</a></div>
-	      				<div class="dp-item"><a href="#!" class="dp-link">EAL</a></div>
-	      				<div class="dp-item"><a href="#!" class="dp-link">What is SEND?</a></div>
-	      			</div> <!-- level-2 -->
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Governors</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Prospectus</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Policies</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Safeguarding <i class="fa fa-caret-right"></i></a>
-	      			<div class="dp-menu level-2 small" style="min-width: 150px">
-	      				<div class="dp-item"><a href="#!" class="dp-link">E-Safety Tips</a></div>
-	      				<div class="dp-item"><a href="#!" class="dp-link">Young Careers</a></div>
-	      			</div> <!-- level-2 -->
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">School Performance Data <i class="fa fa-caret-right"></i></a>
-	      			<div class="dp-menu level-2 small" style="min-width: 150px">
-	      				<div class="dp-item"><a href="#!" class="dp-link">Parent View</a></div>
-	      				<div class="dp-item"><a href="#!" class="dp-link">Ofsted View</a></div>
-	      			</div> <!-- level-2 -->
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">School Day</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Staff List</a>
-	      		</li>
-	      		<li class="dp-item">
-	      			<a href="#!" class="dp-link">Terms of Use</a>
-	      		</li>
-	      	</ul> <!-- dp-menu level-1 -->
-	      </li> <!-- nav-item -->
-	      <li class="nav-item">
-	        <a href="#!" class="nav-link">
-	          Curriculum <i class="fa fa-caret-down"></i>
-	        </a>
-	        <!-- level-1 dropdown-menu -->
-	        <ul class="dp-menu level-1 small" style="min-width: 150px">
-	          <li class="dp-item">
-	            <a href="#!" class="dp-link">
-	              Physics <i class="fa fa-caret-right"></i>
-	            </a>
-			        <!-- level-2 dropdown-menu -->
-	            <ul class="dp-menu level-2 small" style="min-width: 150px">
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Kinematics</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Laws of Motion</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Thermodynamics</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Waves</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Fluid Dynamics</a>
-	              </li>
-	            </ul>
-	          </li> <!-- dropdown-item -->
-	          <li class="dp-item">
-	            <a href="#!" class="dp-link">
-	              Chemistry <i class="fa fa-caret-right"></i>
-	            </a>
-	            <ul class="dp-menu level-2 small" style="min-width: 150px">
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Basic Concepts</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Structure of Atom</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Periodicity</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">States of Matter</a>
-	              </li>
-	              <li class="dp-item">
-	                <a href="#!" class="dp-link">Equilibrium</a>
-	              </li>
-	            </ul>
-	          </li> <!-- dropdown-item -->
-	          <li class="dp-item">
-	            <a href="#!" class="dp-link">Maths</a>
-	          </li> <!-- dropdown-item -->
-	        </ul> <!-- dropdown-menu -->
-	      </li> <!-- nav-item -->
-	      <li class="nav-item">
-	        <a href="#!" class="nav-link">Downloads</a>
-	      </li> <!-- nav-item -->
-	      <li class="nav-item">
-	        <a href="#!" class="nav-link">About</a>
-	      </li> <!-- nav-item -->
-	      <li class="nav-item">
-	        <a href="#!" class="nav-link">Contact</a>
-	      </li> <!-- nav-item -->
-	      <li class="nav-item">
-	        <a href="https://www.moorsidehigh.co.uk/" target="_blank" class="nav-link">Inspiration</a>
-	      </li> <!-- nav-item -->
-	    </ul> <!-- #main-nav -->
-	  </div>
+	<!-- Main Navbar -->
+	<div id="main-navbar">
+		<div class="container">
+			<!-- Hamberger Icon -->
+			<div class="text-right" id="main-navbar-toggler">
+				<button onclick="activateMenu()" class="btn btn-secondary btn-sm rounded-0">MENU <i class="fa fa-bars ml-1"></i></button>
+			</div>
+			<!-- Menu -->
+			<ul class="menu">
+				<li><a href="../index.html">Home</a></li>
+				<li>
+					<a href="javascript:void(0);">About Us <i class="fa fa-caret-down ml-1"></i></a>
+					<ul class="sub-menu">
+						<li><a href="#">British Values</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Governors</a></li>
+						<li>
+							<a href="javascript:void(0);">Learning Support <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Special Education Needs</a></li>
+								<li><a href="#">Moorside High School Local Offer</a></li>
+								<li><a href="#">EAL</a></li>
+								<li><a href="#">What is SEND?</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Prospectus</a></li>
+						<li><a href="#">Policies</a></li>
+						<li>
+							<a href="javascript:void(0);">Safeguarding <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">E-Saftey Tips</a></li>
+								<li><a href="#">Young Careers</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">School Performing Data <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Parent View</a></li>
+								<li><a href="#">Ofsted</a></li>
+							</ul>
+						</li>
+						<li><a href="#">School Day</a></li>
+						<li><a href="#">Staff List</a></li>
+						<li><a href="#">Term of Use</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Curriculum <i class="fa fa-caret-down ml-1"></i></a>
+					<ul class="sub-menu">
+						<li>
+							<a href="javascript:void(0);">Art <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Photography</a></li>
+								<li><a href="#">Fine Art GCSE</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Business Studies <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Year 11 Exam Dates</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Computing <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Creative Media</a></li>
+								<li><a href="#">Computer Science</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Design &amp; Technology <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Food &amp; Nutrition</a></li>
+								<li><a href="#">Textiles</a></li>
+								<li><a href="#">Health &amp; Social Care</a></li>
+								<li><a href="#">Graphic Design</a></li>
+								<li><a href="#">Product Design</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Drama <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Drama Homework</a></li>
+								<li><a href="#">Drama GCSE</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">English <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Elevate Learning</a></li>
+								<li><a href="#">English Homework</a></li>
+								<li><a href="#">Literature PiXL App</a></li>
+								<li><a href="#">Support for KS4 pupils</a></li>
+								<li><a href="#">Useful Websites</a></li>
+								<li><a href="#">Year 10 Half Term Projects</a></li>
+								<li><a href="#">Year 11 Half Term Projects</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Geography</a></li>
+						<li><a href="#">History</a></li>
+						<li>
+							<a href="javascript:void(0);">Literacy <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Learning Resource Center</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Mathematics</a></li>
+						<li><a href="#">Mordern Foriegn Languages</a></li>
+						<li>
+							<a href="javascript:void(0);">Music <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Homework</a></li>
+								<li><a href="#">Music GCSE</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Physical Education <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Dance GCSE</a></li>
+								<li><a href="#">Health &amp; Fitness V Cert</a></li>
+								<li><a href="#">PE GCSE</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Religious Education</a></li>
+						<li><a href="#">Science</a></li>
+						<li><a href="#">Travel &amp; Tourism</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Parents <i class="fa fa-caret-down ml-1"></i></a>
+					<ul class="sub-menu">
+						<li><a href="#">Absence Request</a></li>
+						<li><a href="#">Attendance</a></li>
+						<li><a href="#">Calendar</a></li>
+						<li><a href="#">Consilium Academy Trust</a></li>
+						<li>
+							<a href="javascript:void(0);">COVID-19 January 2021 <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Covid-19 Testing</a></li>
+								<li><a href="#">Year 7 Information</a></li>
+								<li><a href="#">Year 8 Information</a></li>
+								<li><a href="#">Year 9 Information</a></li>
+								<li><a href="#">Year 10 Information</a></li>
+								<li><a href="#">Year 11 Information</a></li>
+								<li><a href="#">Mental Health & Wellbeing</a></li>
+								<li><a href="#">Student Welfare</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Diary Listing</a></li>
+						<li><a href="#">GUided Pathways (Options)</a></li>
+						<li><a href="#">Letters to Parents</a></li>
+						<li><a href="#">News Listing</a></li>
+						<li><a href="#">Parents Evening</a></li>
+						<li><a href="#">Pupil Premium</a></li>
+						<li><a href="#">Term Dates</a></li>
+						<li><a href="#">Transition</a></li>
+						<li><a href="#">Uniform</a></li>
+						<li><a href="#">Year Team Information</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Students <i class="fa fa-caret-down ml-1"></i></a>
+					<ul class="sub-menu">
+						<li>
+							<a href="javascript:void(0);">Careers, Education, Information &amp; Guidance <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">Careers in Subject Areas</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Duke of Edinburgh <i class="fa fa-caret-down ml-1"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">How to get involved</a></li>
+								<li><a href="#">eDoFE: Getting Started</a></li>
+								<li><a href="#">eDoFE: Completing Your Award</a></li>
+								<li><a href="#">eDoFE: Finishing Your Award</a></li>
+								<li><a href="#">Official eDoFE Userguide</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Email</a></li>
+						<li><a href="#">Assignments</a></li>
+						<li><a href="#">GCSEpod</a></li>
+						<li><a href="#">Homework Timetable</a></li>
+						<li><a href="#">Remote Desktop</a></li>
+						<li><a href="#">What to do if...?</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Staff <i class="fa fa-caret-down ml-1"></i></a>
+					<ul class="sub-menu">
+						<li><a href="#">Evolve</a></li>
+						<li><a href="#">Email</a></li>
+						<li><a href="#">Remote Desktop</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Vacancies</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<!-- HERO -->
