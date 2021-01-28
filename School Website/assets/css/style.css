@@ -93,6 +93,7 @@
     margin: 0;
     list-style: none;
     border-left: 5px solid var(--main-light);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     z-index: 2000;
     display: none;
   }
@@ -202,7 +203,7 @@
 
 /*Main Content*/
 .main-content{
-	margin-top: 130px;
+	/*margin-top: 130px;*/
 }
 /*COMMON*/
 .special-heading::before{
