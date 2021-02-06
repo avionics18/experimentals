@@ -195,3 +195,12 @@
     padding: 0;
   }
 }
+
+
+
+/*SIDEBAR*/
+.list-group .list-group-item.active{
+  color: #cbd3da!important;
+  background-color: #1d2124!important;
+  border-color: transparent!important;
+}

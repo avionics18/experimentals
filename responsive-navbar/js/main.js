@@ -1,7 +1,26 @@
 
 // Activate Menu through Hamberger Button
 function activateMenu(){
-	document.querySelector("#main-navbar .menu").classList.toggle("d-block");
+  // AIM :
+  // Select the ul.menu and display it when clicked and if clicked again hide it but
+  // also check if anyone inside is having d-block if yes remove them
+
+  var ulMenu = document.querySelector("#main-navbar .menu");
+  var navBtn = document.querySelector("#main-navbar-toggler > button");
+  // STEP 2
+  if(ulMenu.classList.contains("d-block")){
+    navBtn.innerHTML = "MENU <i class=\"fa fa-bars ml-1\"><\/i>";
+    var dBlocks = ulMenu.querySelectorAll(".d-block");
+    dBlocks.forEach(item=>{
+      item.classList.remove("d-block");
+    });
+    ulMenu.classList.toggle("d-block");
+  }
+  // STEP 1
+  else {
+    ulMenu.classList.toggle("d-block");
+    navBtn.innerHTML = "CLOSE <i class=\"fa fa-times ml-1\"><\/i>";
+  }
 }
 
 
@@ -9,7 +28,8 @@ function activateMenu(){
 // do the toggling of menus and submenus.
 function myFunction(x) {
   if (x.matches) { // If media query matches
-  	//Here is Where our all the navigation code goes.
+
+    // Select all the anchor elements that will be clicked (here anchor are block elements, css)
   	var anchorElements = document.querySelectorAll("#main-navbar li > a");
 
   	for (var i = 0; i < anchorElements.length; i++) {
