@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Search Bar -->
+  <div class="container mb-5">
+    <div class="row">
+      <div id="searchBar" class="col-12">
+        <div class="input-group">
+          <input type="text" placeholder="Search" class="form-control">
+          <select class="custom-select" placeholder="Search">
+            <option selected>Choose Location</option>
+            <option value="1">India</option>
+            <option value="2">USA</option>
+            <option value="3">Australia</option>
+          </select>
+          <div class="input-group-append">
+            <button class="btn btn-primary px-5" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Projects clients task invoive -->
+  <div class="container">
+    <div class="row">
+      <div id="projects" class="col-md-6 mb-4">
+        <div class="d-flex justify-content-between">
+          <p><b>Projects</b></p>
+          <p><a class="text-decoration-none" href="#!"><small><b>Manage Projects</b></small></a></p>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card border-none shadow bg-primary mb-1">
+                  <div class="card-body text-light">
+                    <p>All Projects</p>
+                    <h2 class="m-0">06</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card border-none shadow bg-success mb-1">
+                  <div class="card-body text-light">
+                    <p>Completed</p>
+                    <h2 class="m-0">02</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card border-none shadow bg-warning mb-1">
+                  <div class="card-body text-light">
+                    <p>Pending</p>
+                    <h2 class="m-0">04</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 mt-4">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- projects col-md-6-->
+
+      <div class="col-md-3 p-0 mb-4">
+        <div id="clients" class="mb-4">
+          <div class="d-flex justify-content-between">
+            <p><b>Clients (5)</b></p>
+            <p><a class="text-decoration-none" href="#!"><small><b>View All</b></small></a></p>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <div class="img"></div>
+                <div class="wrapper pl-2">
+                  <p class="m-0"><b>Avinash</b></p>
+                  <p class="text-secondary mb-0"><small>avinash@gmail.com</small></p>
+                </div>
+                <div class="msgIcon">
+                  <button class="btn btn-outline-secondary" title="Message"><b>#</b></button>
+                </div>
+              </div> <!-- client 1 -->
+              <div class="d-flex mb-3">
+                <div class="img"></div>
+                <div class="wrapper pl-2">
+                  <p class="m-0"><b>Rudree</b></p>
+                  <p class="text-secondary mb-0"><small>rudree@gmail.com</small></p>
+                </div>
+                <div class="msgIcon">
+                  <button class="btn btn-outline-secondary" title="Message"><b>#</b></button>
+                </div>
+              </div> <!-- client 3 -->
+              <div class="d-flex">
+                <div class="img"></div>
+                <div class="wrapper pl-2">
+                  <p class="m-0"><b>Sadul</b></p>
+                  <p class="text-secondary mb-0"><small>sadul@gmail.com</small></p>
+                </div>
+                <div class="msgIcon">
+                  <button class="btn btn-outline-secondary" title="Message"><b>#</b></button>
+                </div>
+              </div> <!-- client last - not(mb-3) -->
+            </div>
+          </div>
+        </div> <!-- clients -->
+        <div id="bids">
+          <div class="d-flex justify-content-between">
+            <p><b>My Bids (8)</b></p>
+            <p><a class="text-decoration-none" href="#!"><small><b>View All</b></small></a></p>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <p>Inc Corp. <span class="float-right"><a href="#!" class="text-decoration-none text-warning"><small><b>Pending</b></small></a></span></p><hr>
+              <p>Jasper Tech <span class="float-right"><a href="#!" class="text-decoration-none text-warning"><small><b>Pending</b></small></a></span></p><hr>
+              <p>NewGen <span class="float-right"><a href="#!" class="text-decoration-none"><small><b>Move to Project</b></small></a></span></p><hr>
+              <p class="m-0">Orbit <span class="float-right"><a href="#!" class="text-decoration-none"><small><b>Move to Project</b></small></a></span></p>
+            </div>
+          </div>
+        </div> <!-- bids -->
+      </div> <!-- clients & bids col-md-3 -->
+
+      <div class="col-md-3">
+        <div id="task" class="mb-4">
+          <div>
+            <p><b>Task</b></p>
+          </div>
+          <div class="bg-primary" style="height: 224px; border-radius: 10px"></div>
+        </div>  <!-- end of task -->
+        <div id="invoice">
+          <div class="d-flex justify-content-between">
+            <p><b>Invoice</b></p>
+            <p><a class="text-decoration-none" href="#!"><small><b>View All</b></small></a></p>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <p><b>Flip Corp.</b></p>
+              <p>Client <span class="float-right">Edward Black</span></p>
+              <p>Task <span class="float-right">Design</span></p>
+              <p>Working Time <span class="float-right">2 days 3 hr</span></p>
+              <button class="btn btn-danger btn-block shadow">Create Invoice</button>
+            </div>
+          </div>
+        </div> <!-- end of invoice -->
+      </div> <!-- Task and invoice col-md-3 -->
+    </div>  <!-- end of row -->
+  </div>  <!-- end of container -->
+
+
+  
+
+  
+  
+</body>
+</html>

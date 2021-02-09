@@ -1,0 +1,268 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>FrontEnd Blog</title>
+	<!-- Custom Style -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+		crossorigin="anonymous" />
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+		crossorigin="anonymous" />
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="bg-primary">
+		<div class="container">
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="/" class="nav-link text-light text-uppercase font-weight-bold small">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link text-light text-uppercase font-weight-bold small">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header class="bg-dark py-5">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-center">
+				<h1 class="ff-david ff-700 m-0">
+					<a href="/" class="text-decoration-none">
+						<span class="bg-primary rounded-lg shadow-lg text-light py-2 px-4"><i class="fa fa-code"></i> <span class="d-sm-inline d-none">FRONTEND BLOG</span></span>
+					</a>
+				</h1>
+				<!-- Button -->
+				<button onclick="activate(1)" class="btn btn-primary btn-lg">
+          <i class="fa fa-bars"></i>
+        </button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Menu Sidebar -->
+	<div class="menu-sidebar vh-100 bg-dark p-4">
+		<div class="d-flex justify-content-between align-items-center mb-5">
+			<h3 class="m-0 text-secondary">MENU</h3>
+			<button onclick="activate(0)" class="btn btn-secondary">
+        <i class="fa fa-times"></i>
+      </button>
+		</div> <!-- flex-item -->
+		<ul class="list-unstyled">
+			<li class="h2 font-weight-light mb-3">
+				<a href="/" class="text-light text-uppercase">home</a>
+			</li>
+			<li class="h2 font-weight-light mb-3">
+				<a href="#!" class="text-light text-uppercase">projects</a>
+			</li>
+			<li class="h2 font-weight-light mb-3">
+				<a href="about.html" class="text-light text-uppercase">about</a>
+			</li>
+			<li class="h2 font-weight-light mb-3">
+				<a href="#!" class="text-light text-uppercase">contact</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Blog Posts -->
+	<div class="blog-posts py-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="./posts/3-things-about-CSS-variables-you-might-not-know.html"
+									class="text-primary text-decoration-none">3 things about CSS variables you might not
+									know</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="./posts/3-things-about-CSS-variables-you-might-not-know.html"
+								class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 26 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="./posts/The-failed-promise-of-Web-Components.html"
+									class="text-primary text-decoration-none">The failed promise of Web Components</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="./posts/The-failed-promise-of-Web-Components.html"
+								class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 21 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 5 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="./posts/filters-css-CSS-only-library-to-apply-color-filters.html"
+									class="text-primary text-decoration-none">filters.css – CSS only library to apply
+									color filters</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="./posts/filters-css-CSS-only-library-to-apply-color-filters.html"
+								class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 18 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 8 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="#!" class="text-primary text-decoration-none">Finding The Root Cause of a CSS
+									Bug</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="#!" class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 16 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="#!" class="text-primary text-decoration-none">ztext.js – 3D Typography for the
+									Web</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="#!" class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 14 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 4 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="#!" class="text-primary text-decoration-none">Everything about null in
+									JavaScript</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="#!" class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 11 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 10 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="#!" class="text-primary text-decoration-none">Optimizing CSS for faster page
+									loads</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="#!" class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 8 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 2 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-3 shadow-sm">
+						<div class="card-body">
+							<h5 class="font-weight-bold">
+								<a href="#!" class="text-primary text-decoration-none">How to Use Fetch with
+									async/await</a>
+							</h5>
+							<p class="text-secondary small">CSS variables (or custom properties, depending on how you
+								prefer to call them) are really cool, and chances are, you're already using them in your
+								projects already.</p>
+							<a href="#!" class="btn btn-outline-dark btn-sm">Read More &raquo;</a>
+						</div>
+						<div class="card-footer">
+							<p class="m-0 text-muted small">
+								<i class="fa fa-calendar"></i> 5 Sept 2020
+								<span class="float-right"><i class="fa fa-clock-o"></i> 6 min read</span>
+							</p>
+						</div>
+					</div> <!-- card -->
+				</div> <!-- col-lg-4 -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-dark py-4">
+		<div class="container">
+			<p class="text-secondary text-center small m-0">Copyright &copy; 2020 <a href="#!"
+					class="text-light">Frontend Blog</a> | All Rights Reserved.</p>
+		</div>
+	</footer>
+
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>

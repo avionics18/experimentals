@@ -1,0 +1,166 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The failed promise of Web Components | FrontEnd Blog</title>
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="../styles.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="bg-primary">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link text-light text-uppercase font-weight-bold small">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="../about.html" class="nav-link text-light text-uppercase font-weight-bold small">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-dark py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="ff-david ff-700 m-0">
+          <a href="/" class="text-decoration-none">
+            <span class="bg-primary rounded-lg shadow-lg text-light py-2 px-4"><i class="fa fa-code"></i> <span class="d-sm-inline d-none">FRONTEND BLOG</span></span>
+          </a>
+        </h1>
+        <!-- Button -->
+        <button onclick="activate(1)" class="btn btn-primary btn-lg">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Menu Sidebar -->
+  <div class="menu-sidebar vh-100 bg-dark p-4">
+    <div class="d-flex justify-content-between align-items-center mb-5">
+      <h3 class="m-0 text-secondary">MENU</h3>
+      <button onclick="activate(0)" class="btn btn-secondary">
+        <i class="fa fa-times"></i>
+      </button>
+    </div> <!-- flex-item -->
+    <ul class="list-unstyled">
+      <li class="h2 font-weight-light mb-3">
+        <a href="/" class="text-light text-uppercase">home</a>
+      </li>
+      <li class="h2 font-weight-light mb-3">
+        <a href="#!" class="text-light text-uppercase">projects</a>
+      </li>
+      <li class="h2 font-weight-light mb-3">
+        <a href="../about.html" class="text-light text-uppercase">about</a>
+      </li>
+      <li class="h2 font-weight-light mb-3">
+        <a href="#!" class="text-light text-uppercase">contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main-content -->
+  <div class="post-content">
+    <div class="post-heading-block border-bottom mb-5 shadow">
+      <div class="container text-center">
+        <p class="categories text-secondary text-uppercase small font-weight-bold m-0">All Posts, Design, Learn</p>
+        <h2 class="heading h1 ff-david ff-500 m-0 py-3">The failed promise of Web Components</h2>
+        <p class="post-data text-secondary small m-0">Avionics on Sept 26, 2020 | 3 min read</p>
+      </div>
+    </div>
+    <!-- post-content row -->
+    <div class="container post-content-row">
+      <div class="row">
+        <div class="col-lg-8 post-content-content">
+          <p>Web Components had so much potential to empower HTML to do more, and make web development more accessible to non-programmers and easier for programmers. Remember how exciting it was every time we got new shiny HTML elements that actually do stuff? Remember how exciting it was to be able to do sliders, color pickers, dialogs, disclosure widgets straight in the HTML, without having to include any widget libraries?</p>
+
+          <p>The promise of Web Components was that we’d get this convenience, but for a much wider range of HTML elements, developed much faster, as nobody needs to wait for the full spec + implementation process. We’d just include a script, and boom, we have more elements at our disposal!</p>
+
+          <p>Or, that was the idea. Somewhere along the way, the space got flooded by JS frameworks aficionados, who revel in complex APIs, overengineered build processes and dependency graphs that look like the roots of a banyan tree.</p>
+
+          <div class="sample-img shadow-sm"></div>
+
+          <p>Perusing the components on webcomponents.org fills me with anxiety, and I’m perfectly comfortable writing JS — I write JS for a living! What hope do those who can’t write JS have? Using a custom element from the directory often needs to be preceded by a ritual of npm flugelhorn, import clownshoes, build quux, all completely unapologetically because “here is my truckload of dependencies, yeah, what”. Many steps are even omitted, likely because they are “obvious”. Often, you wade through the maze only to find the component doesn’t work anymore, or is not fit for your purpose.</p>
+
+          <p>Besides setup, the main problem is that HTML is not treated with the appropriate respect in the design of these components. They are not designed as closely as possible to standard HTML elements, but expect JS to be written for them to do anything. HTML is simply treated as a shorthand, or worse, as merely a marker to indicate where the element goes in the DOM, with all parameters passed in via JS. I recall a wonderful talk by Jeremy Keith a few years ago about this very phenomenon, where he discussed this e-shop Web components demo by Google, which is the poster child of this practice. These are the entire contents of its <kbd>&lt;body&gt;</kbd> element. </p>
+        </div>
+        <!-- col-lg-8 post-content-content -->
+        <div class="col-lg-4 post-sidebar">
+          <!-- Recent Posts -->
+          <div class="card bg-light rounded-0 mb-4 shadow-sm">
+            <div class="card-body">
+              <h3>Recent Posts</h3>
+              <p class="text-lighter smaller">//////////////////////////////////////////////////////////</p>
+              <ul class="pl-3 list-style-square text-secondary">
+                <li>
+                  <a href="#!" class="text-primary">3 things about CSS variables you might not know</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-primary">The failed promise of Web Components</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-primary">filters.css – CSS only library to apply color filters</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-primary">Finding The Root Cause of a CSS Bug</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-primary">ztext.js – 3D Typography for the Web</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Follow Us -->
+          <div class="card bg-light rounded-0 mb-4 shadow-sm">
+            <div class="card-body">
+              <h3>Follow Us</h3>
+              <p class="text-lighter smaller">//////////////////////////////////////////////////////////</p>
+              <button class="btn btn-secondary btn-lg rounded-0">
+                <i class="fa fa-facebook"></i>
+              </button>
+              <button class="btn btn-secondary btn-lg rounded-0">
+                <i class="fa fa-youtube-play"></i>
+              </button>
+              <button class="btn btn-secondary btn-lg rounded-0">
+                <i class="fa fa-twitter"></i>
+              </button>
+              <button class="btn btn-secondary btn-lg rounded-0">
+                <i class="fa fa-dribbble"></i>
+              </button>
+              <button class="btn btn-secondary btn-lg rounded-0">
+                <i class="fa fa-linkedin"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark py-4">
+    <div class="container">
+      <p class="text-secondary text-center small m-0">Copyright &copy; 2020 <a href="#!" class="text-light">Frontend Blog</a> | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="../main.js"></script>
+
+</body>
+</html>

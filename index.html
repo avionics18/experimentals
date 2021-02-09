@@ -7,140 +7,68 @@
   <!-- Bootstrap cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- custom styling  -->
   <style>
-    header{ border-top: 8px solid var(--primary); }
+    body{ background-color: #17222C; }
+    header{ 
+      border-top: 8px solid var(--primary);
+      padding: 35px 0;
+    }
+    .card-box{
+      background: linear-gradient(45deg, var(--dark), var(--primary));
+      padding: 40px 0;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .heading{
+      font-size: 4.5rem;
+      font-weight: 300;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    @media (max-width: 575.98px) {
+      .heading{
+        font-size: 3rem;
+      }
+    }
   </style>
 </head>
-<body class="bg-light">
+<body>
   
-  <header class="py-5 bg-dark">
+  <header class="bg-dark">
     <div class="container py-3">
-      <h1 class="text-white"><b>Experimental HTML, CSS, JS</b></h1>
+      <h1 class="text-white text-uppercase"><i class="fas fa-flask mr-2"></i><b>EX</b><span class="font-weight-light">perimentals</span></h1>
     </div>
   </header>
 
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box shadow">
+            <h2 class="heading text-white w-75 mt-5 pl-4 py-3" style="background-color: rgba(0,0,0,0.3)">Website Remakes</h2>
+            <p class="text-center mt-4 mb-0">
+              <a href="website-remakes.html" class="btn btn-dark btn-lg">Let's Go<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </p>
-            <h5 class="mb-4"><a href="./horizontal-scroll-posts/index.html" class="text-primary text-capitalize">Horizontal Scrollbar Recent Posts</a></h5>
-            <a href="./horizontal-scroll-posts/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
           </div>
         </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
+        <!-- .col-md-6 -->
+        <div class="col-md-6">
+          <div class="card-box shadow">
+            <h2 class="heading text-white w-75 mt-5 pl-4 py-3" style="background-color: rgba(0,0,0,0.3)">UI Design Challenges</h2>
+            <p class="text-center mt-4 mb-0">
+              <a href="ui-design-challenges.html" class="btn btn-dark btn-lg">Let's Go<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </p>
-            <h5 class="mb-4"><a href="./Megamenu Black/index.html" class="text-primary text-capitalize">Mega Menu Black</a></h5>
-            <a href="./Megamenu Black/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
           </div>
         </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-            </p>
-            <h5 class="mb-4"><a href="./Responsive Timeline/index.html" class="text-primary text-capitalize">Responsive Timeline</a></h5>
-            <a href="./Responsive Timeline/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-            </p>
-            <h5 class="mb-4"><a href="./Blogger Design/index.html" class="text-primary text-capitalize">Blogger Design</a></h5>
-            <a href="./Blogger Design/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-            </p>
-            <h5 class="mb-4"><a href="./Hugo Website Design/index.html" class="text-primary text-capitalize">HUGO Website Design</a></h5>
-            <a href="./Hugo Website Design/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-            </p>
-            <h5 class="mb-4"><a href="./Documentation Website/index.html" class="text-primary text-capitalize">Documentation Website</a></h5>
-            <a href="./Documentation Website/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-            </p>
-            <h5 class="mb-4"><a href="./School Website/index.html" class="text-primary text-capitalize">School Website</a></h5>
-            <a href="./School Website/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-              <span class="badge badge-secondary">JS</span>
-            </p>
-            <h5 class="mb-4"><a href="./js-calculator/index.html" class="text-primary text-capitalize">JS Calculator</a></h5>
-            <a href="./js-calculator/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-      <div class="col-md-3 col-sm-6 mb-3">
-        <div class="card h-100 shadow-sm rounded-lg">
-          <div class="card-body">
-            <p>
-              <span class="badge badge-secondary">HTML</span>
-              <span class="badge badge-secondary">CSS</span>
-              <span class="badge badge-secondary">JS</span>
-            </p>
-            <h5 class="mb-4"><a href="./responsive-navbar/index.html" class="text-primary text-capitalize">Fully Multi-Level Responsive Navbar</a></h5>
-            <a href="./responsive-navbar/index.html" class="btn btn-outline-primary btn-sm">View Project <i class="fa fa-github"></i></a>
-          </div>
-        </div>
-      </div> <!-- col-md-3 -->
-    </div> <!-- row -->
-  </div>
+        <!-- .col-md-6 -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
+  </section>  
   
   
-  
-  <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+{
+  "websiteRemakes": [
+    {
+      "title": "Moorside School Website",
+      "url": "./school-website/index.html"
+    },
+    {
+      "title": "FrontEnd Blog",
+      "url": "./frontend-blog/index.html"
+    },
+    {
+      "title": "Dashboard UI",
+      "url": "./dashboard-ui/index.html"
+    },
+    {
+      "title": "Maxlines Logistic Website",
+      "url": "./maxlines-logistic-website/index.html"
+    }
+  ],
+  "uiDesign": [
+    {
+      "title": "Horizontal Scroll Posts",
+      "url": "./horizontal-scroll-posts/index.html"
+    },
+    {
+      "title": "JS Calculator",
+      "url": "./js-calculator/index.html"
+    },
+    {
+      "title": "Responsive Timeline",
+      "url": "./responsive-timeline/index.html"
+    },
+    {
+      "title": "Xtreme Mega Menu",
+      "url": "./xtreme-mega-menu/index.html"
+    },
+    {
+      "title": "Documentation Website",
+      "url": "./documentation-website/index.html"
+    },
+    {
+      "title": "Blogger Design 1",
+      "url": "./blogger-design-1/index.html"
+    },
+    {
+      "title": "Blogger Design 2",
+      "url": "./blogger-design-2/index.html"
+    },
+    {
+      "title": "Custom Dope Carousel",
+      "url": "./custom-dope-carousel/index.html"
+    },
+    {
+      "title": "Responsive Navbar",
+      "url": "./responsive-navbar/index.html"
+    }
+  ]
+}

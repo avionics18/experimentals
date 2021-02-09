@@ -1,0 +1,129 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>About | FrontEnd Blog</title>
+	<!-- Custom Style -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+		crossorigin="anonymous" />
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+		crossorigin="anonymous" />
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="bg-primary">
+		<div class="container">
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="/" class="nav-link text-light text-uppercase font-weight-bold small">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="nav-link text-light text-uppercase font-weight-bold small">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header class="bg-dark py-5">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-center">
+				<h1 class="ff-david ff-700 m-0">
+					<a href="/" class="text-decoration-none">
+						<span class="bg-primary rounded-lg shadow-lg text-light py-2 px-4"><i class="fa fa-code"></i> <span class="d-sm-inline d-none">FRONTEND BLOG</span></span>
+					</a>
+				</h1>
+				<!-- Button -->
+				<button onclick="activate(1)" class="btn btn-primary btn-lg">
+          <i class="fa fa-bars"></i>
+        </button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Menu Sidebar -->
+	<div class="menu-sidebar vh-100 bg-dark p-4">
+		<div class="d-flex justify-content-between align-items-center mb-5">
+			<h3 class="m-0 text-secondary">MENU</h3>
+			<button onclick="activate(0)" class="btn btn-secondary">
+        <i class="fa fa-times"></i>
+      </button>
+		</div> <!-- flex-item -->
+		<ul class="list-unstyled">
+			<li class="h2 font-weight-light mb-3">
+				<a href="/" class="text-light text-uppercase">home</a>
+			</li>
+			<li class="h2 font-weight-light mb-3">
+				<a href="#!" class="text-light text-uppercase">projects</a>
+			</li>
+			<li class="h2 font-weight-light mb-3">
+				<a href="about.html" class="text-light text-uppercase">about</a>
+			</li>
+			<li class="h2 font-weight-light mb-3">
+				<a href="#!" class="text-light text-uppercase">contact</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- About -->
+	<div class="main-page-heading text-white py-5"
+		style="background-image: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0.7)), url('https://prime.horizonhospital.com/wp-content/uploads/2018/09/contact-us-cover.jpg');">
+		<div class="container py-3">
+			<h1 class="text-center text-uppercase display-3 fw-700 m-0">About Us</h1>
+		</div>
+	</div>
+	<!-- page-content -->
+	<div class="bg-light py-5">
+		<div class="container">
+			<h3>What is this Website?</h3>
+			<hr>
+			<p>A crowd curated feed of front-end related articles. There's also an updated list of Javascript
+				conferences in 2020 and 2021, if you're interested in that.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quam natus exercitationem quod beatae
+				doloribus neque et vitae non quos, hic illum modi eum accusantium est itaque quasi explicabo dolorum.
+			</p>
+			<br>
+			<h3>Who’s behind Front-End Front?</h3>
+			<hr>
+			<p>Front-End Front is the effort of two brothers, Avinash and Avitesh Murmu. Here’s what they look like:</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, accusamus incidunt corrupti nam, ullam
+				necessitatibus omnis nesciunt distinctio at ab quibusdam veritatis inventore provident nulla. Eius
+				recusandae aliquid deserunt nam.</p>
+			<div class="d-sm-flex d-block my-3">
+				<div class="profile-pic mr-3 mb-3 rounded-pill shadow-sm"></div>
+				<div class="profile-pic mb-3 rounded-pill shadow-sm"></div>
+			</div>
+			<p>One way to reach us is email: <a href="#!">hello@frontendblog.com</a>. Another reliable option is our
+				Twitter page.</p>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="bg-dark py-4">
+		<div class="container">
+			<p class="text-secondary text-center small m-0">Copyright &copy; 2020 <a href="#!"
+					class="text-light">Frontend Blog</a> | All Rights Reserved.</p>
+		</div>
+	</footer>
+
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>

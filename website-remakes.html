@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXperimental Website</title>
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- custom styling  -->
+  <style>
+    body{ background-color: #17222C; }
+    header{ 
+      border-top: 8px solid var(--primary);
+      padding: 35px 0;
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="bg-dark">
+    <div class="container py-3">
+      <h1 class="text-white text-uppercase"><i class="fas fa-flask mr-2"></i><b>EX</b><span class="font-weight-light">periments</span></h1>
+    </div>
+  </header>
+
+
+  <div class="py-3" style="background-color: #2a2e33;">
+    <div class="container text-center">
+      <p class="text-warning text-uppercase font-weight-bold m-0">WEBSITE REMAKES</p>
+    </div>
+  </div>
+
+
+  <section class="py-5" id="projects">
+    <div class="container">
+      <div class="row"></div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
+  </section>
+
+
+
+  <script>
+
+    // display the projects for ui design challenges
+    function displayRemakes(items){
+      let row = document.querySelector("#projects .row");
+      items.forEach(item => {
+        var col = '<div class="col-lg-3 col-md-4 col-sm-6 mb-3">'+
+                  '<div class="card h-100 bg-dark border-secondary shadow-sm">'+
+                  '<div class="card-body">'+
+                  '<h5 class="m-0">'+
+                  '<a href="'+item.url+'" class="text-white font-weight-light">'+item.title+'</a>'+
+                  '</h5>'+
+                  '</div>'+
+                  '<div class="card-footer">'+
+                  '<a href="'+item.url+'" class="btn btn-primary btn-sm">View<i class="fas fa-long-arrow-alt-right ml-2"></i></a>'+
+                  '</div>'+
+                  '</div>'+
+                  '</div>';
+
+        row.innerHTML += col;
+
+      });
+    }
+
+    // fetching data.json file
+    fetch("./data.json")
+    .then(res => res.json())
+    .then(data => displayRemakes(data.websiteRemakes))
+    .catch(err => {
+      alert("Oops! There was an error in fetching the data. For more details see the console log.");
+      console.log(err);
+    });
+  </script>
+  
+  
+</body>
+</html>

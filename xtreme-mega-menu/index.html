@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xtreme Mega Menu</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="pt-4">
+		<div class="container">
+			<div class="logo-img"></div>
+			<h1 class="logo-name text-center text-uppercase">Xtreme MEGA MENU</h1>
+		</div>
+	</header>
+
+	<!-- To activate Navbar-mobile MENU -->
+	<div class="bg-dark my-4 d-md-none d-block">
+		<div class="container">
+			<div class="text-right py-2">
+				<button onclick="toggleMenu()" class="btn btn-secondary rounded-0">MENU <i class="fa fa-bars"></i></button>
+			</div>
+		</div>
+	</div>
+	<!-- Navbar - Mobile -->
+	<div id="navbar-mobile" class="bg-dark d-none">
+		<div class="container">
+			<div class="text-right mt-4">
+				<button onclick="toggleMenu()" class="btn btn-danger rounded-0">Close X</button>
+			</div>
+			<div id="accordion">
+				<div class="accordion-item">
+					<button data-toggle="collapse" data-target="#home-mobile" class="btn btn-secondary btn-block rounded-0 text-left">Home <i class="fa fa-caret-down"></i></button>
+					<div id="home-mobile" class="collapse accordion-item-content" data-parent="#accordion">
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">FACTSHEETS</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+						</div> <!-- accordion-item-content-item -->
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">RESOURCES</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+						</div> <!-- accordion-item-content-item -->
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">PUBLICATIONS</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+						</div> <!-- accordion-item-content-item -->
+					</div> <!-- accordion-item-content -->
+				</div> <!-- .accordion-item -->
+
+				<div class="accordion-item">
+					<a href="#" class="btn btn-secondary btn-block rounded-0 text-left">Research</a>
+				</div> <!-- .accordion-item -->
+
+				<div class="accordion-item">
+					<button data-toggle="collapse" data-target="#development-mobile" class="btn btn-secondary btn-block rounded-0 text-left">Development <i class="fa fa-caret-down"></i></button>
+					<div id="development-mobile" data-parent="#accordion" class="collapse accordion-item-content">
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">ADMINISTRATION</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 5</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 6</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 7</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 8</a>
+						</div> <!-- accordion-item-content-item -->
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">INFRASTRUCTURE</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 5</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 6</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 7</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 8</a>
+						</div> <!-- accordion-item-content-item -->
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">SPORTS FACILITIES</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 5</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 6</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 7</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 8</a>
+						</div> <!-- accordion-item-content-item -->
+						<div class="accordion-item-content-item">
+							<h5 class="text-main">DEPARTMENTS</h5>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 1</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 2</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 3</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 4</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 5</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 6</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 7</a>
+							<a href="#" class="text-dark accordion-content-link">Sample Link 8</a>
+						</div> <!-- accordion-item-content-item -->
+					</div> <!-- accordion-item-content -->
+				</div> <!-- .accordion-item -->
+				<div class="accordion-item">
+					<a href="#" class="btn btn-secondary btn-block rounded-0 text-left">Countries</a>
+				</div> <!-- .accordion-item -->
+				<div class="accordion-item">
+					<a href="#" class="btn btn-secondary btn-block rounded-0 text-left">About Us</a>
+				</div> <!-- .accordion-item -->
+				<div class="accordion-item">
+					<a href="#" class="btn btn-secondary btn-block rounded-0 text-left">Contact Us</a>
+				</div> <!-- .accordion-item -->
+			</div> <!-- #accordion -->
+		</div> <!-- container -->
+	</div> <!-- #navbar-mobile -->
+
+	<!-- ---------------------------------------------------------------------------------------------- -->
+
+	<!-- Navbar - Desktop -->
+	<div id="navbar" class="my-4 d-md-block d-none">
+		<div class="container">
+			<div class="d-flex justify-content-right align-items-center">
+				<div class="menu-item">
+					<a href="#" class="menu-link">Home <i class="fa fa-caret-down"></i></a>
+					<div class="menu-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<div class="p-3">
+										<h4 class="text-main">FACTSHEETS</h4>
+										<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+									</div>
+								</div>
+								<!-- /.col-md-4 .col-sm-6 -->
+								<div class="col-md-4 col-sm-6">
+									<div class="p-3">
+										<h4 class="text-main">RESOURCES</h4>
+										<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+									</div>
+								</div>
+								<!-- /.col-md-4 .col-sm-6 -->
+								<div class="col-md-4 col-sm-6">
+									<div class="p-3">
+										<h4 class="text-main">PUBLICATIONS</h4>
+										<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+										<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+									</div>
+								</div>
+								<!-- /.col-md-4 .col-sm-6 -->
+							</div>
+							<!-- /.row -->
+						</div> <!-- menu-content > .container -->
+					</div> <!-- menu-content -->
+				</div> <!-- menu-item -->
+				<div class="menu-item">
+					<a href="#" class="menu-link">Research</a>
+				</div> <!-- menu-item -->
+				<div class="menu-item">
+					<a href="#" class="menu-link">Development <i class="fa fa-caret-down"></i></a>
+					<div class="menu-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="list-group rounded-0" id="development-tabs">
+										<a href="#administration-tab-content" data-toggle="tab" class="list-group-item list-group-item-action active">
+											<b>Administration</b>
+										</a> <!-- /.list-group-item -->
+										<a href="#infrastructure-tab-content" data-toggle="tab" class="list-group-item list-group-item-action">
+											<b>Infrastructure</b>
+										</a> <!-- /.list-group-item -->
+										<a href="#sports-tab-content" data-toggle="tab" class="list-group-item list-group-item-action">
+											<b>Sports Facilities</b>
+										</a> <!-- /.list-group-item -->
+										<a href="#departments-tab-content" data-toggle="tab" class="list-group-item list-group-item-action">
+											<b>Departments</b>
+										</a> <!-- /.list-group-item -->
+									</div> <!-- #development-tabs .list-group -->
+								</div> <!-- col-md-4 -->
+
+								<div class="col-md-8 bg-light">
+									<div class="tab-content">
+										<div id="administration-tab-content" class="tab-pane fade show active p-3">
+											<div class="d-flex align-items-center">
+												<div class="bg-secondary shadow mr-4 flex-1" style="height: 150px;">
+													<img class="tab-content-img" src="https://www.cogneesol.com/blog/wp-content/uploads/2017/01/insurance-policy.jpg" alt="administration">
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+												</div>
+											</div>
+											<!-- /.d-flex -->
+										</div> <!-- tab-pane -->
+										<div id="infrastructure-tab-content" class="tab-pane fade p-3">
+											<div class="d-flex align-items-center">
+												<div class="bg-secondary shadow mr-4 flex-1" style="height: 150px;">
+													<img class="tab-content-img" src="https://images.shiksha.com/mediadata/images/1513922151phpyhMkzk.png" alt="infrastructure">
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+												</div>
+											</div>
+											<!-- /.d-flex -->
+										</div> <!-- tab-pane -->
+										<div id="sports-tab-content" class="tab-pane fade p-3">
+											<div class="d-flex align-items-center">
+												<div class="bg-secondary shadow mr-4 flex-1" style="height: 150px;">
+													<img class="tab-content-img" src="https://sportadvisory.com/wp-content/uploads/2017/01/popular-types-of-facilities-sports-facilities-advisory.jpg" alt="sport facilities">
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 4</a>
+												</div>
+											</div>
+											<!-- /.d-flex -->
+										</div> <!-- tab-pane -->
+										<div id="departments-tab-content" class="tab-pane fade p-3">
+											<div class="d-flex align-items-center">
+												<div class="bg-secondary shadow mr-4 flex-1" style="height: 150px;">
+													<img class="tab-content-img" src="https://www.anandacollege.in/wp-content/uploads/2018/05/dept-tamil.png" alt="departments">
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+												</div>
+												<div class="flex-1">
+													<a href="#" class="text-dark menu-content-link">Sample Link 1</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 2</a>
+													<a href="#" class="text-dark menu-content-link">Sample Link 3</a>
+												</div>
+											</div>
+											<!-- /.d-flex -->
+										</div> <!-- tab-pane -->
+									</div> <!-- tab-content -->
+								</div> <!-- .col-md-8 -->
+							</div>
+							<!-- /.row -->
+						</div> <!-- menu-content > .container -->
+					</div> <!-- menu-content -->
+				</div> <!-- menu-item -->
+				<div class="menu-item">
+					<a href="#" class="menu-link">Countries</a>
+				</div> <!-- menu-item -->
+				<div class="menu-item">
+					<a href="#" class="menu-link">About Us</a>
+				</div> <!-- menu-item -->
+				<div class="menu-item">
+					<a href="#" class="menu-link">Contact Us</a>
+				</div> <!-- menu-item -->
+			</div>
+			<!-- /.d-flex justify-content-around align-items-center -->
+		</div>
+		<!-- /.container -->
+	</div> <!-- /#navbar (desktop) -->
+
+	<!-- BULLSHIT CONTENT ===================== -->
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="d-none border bg-light mb-4">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="list-group rounded-0" id="development-tabs">
+								<a href="#administration-tab-content" data-toggle="tab" class="list-group-item list-group-item-action active">
+									<b>Administration</b>
+								</a> <!-- /.list-group-item -->
+								<a href="#infrastructure-tab-content" data-toggle="tab" class="list-group-item list-group-item-action">
+									<b>Infrastructure</b>
+								</a> <!-- /.list-group-item -->
+								<a href="#sports-tab-content" data-toggle="tab" class="list-group-item list-group-item-action">
+									<b>Sports Facilities</b>
+								</a> <!-- /.list-group-item -->
+								<a href="#departments-tab-content" data-toggle="tab" class="list-group-item list-group-item-action">
+									<b>Departments</b>
+								</a> <!-- /.list-group-item -->
+							</div> <!-- #development-tabs .list-group -->
+						</div> <!-- col-md-4 -->
+
+						<div class="col-md-8">
+							<div class="tab-content">
+								<div id="administration-tab-content" class="tab-pane fade show active p-3">
+									<div class="d-flex">
+										<div class="bg-secondary shadow-sm mr-4" style="width: 200px; height: 150px;"></div>
+										<div class="py-1">
+											<p class="m-0"><a href="#" class="text-decoration-none">Sample Link 1</a></p>
+											<p class="m-0"><a href="#" class="text-decoration-none">Sample Link 2</a></p>
+											<p class="m-0"><a href="#" class="text-decoration-none">Sample Link 3</a></p>
+											<p class="m-0"><a href="#" class="text-decoration-none">Sample Link 4</a></p>
+											<p class="m-0"><a href="#" class="text-decoration-none">Sample Link 5</a></p>
+											<p class="m-0"><a href="#" class="text-decoration-none">Sample Link 6</a></p>
+										</div>
+									</div>
+									<!-- /.d-flex -->
+								</div>
+								<div id="infrastructure-tab-content" class="tab-pane fade p-3">
+									Infra Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt.
+								</div>
+								<div id="sports-tab-content" class="tab-pane fade p-3">
+									Sports Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt.
+								</div>
+								<div id="departments-tab-content" class="tab-pane fade p-3">
+									Departments Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt.
+								</div>
+							</div> <!-- tab-content -->
+						</div> <!-- .col-md-8 -->
+					</div> <!-- .row -->
+
+				</div>
+				<!-- /.card bg-light mb-4 -->
+
+				<div class="card bg-light mb-4">
+					<div class="card-body">
+						<h2 class="text-main text-capitalize">Lorem ipsum dolor sit amet.</h2>
+						<hr>
+						<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam, dicta provident omnis voluptas laborum natus porro doloribus reprehenderit non saepe ut. Illo nemo ut incidunt dignissimos, neque consequuntur amet veritatis nobis repellendus possimus molestiae reprehenderit vitae, magni, porro voluptas? Nisi eius repellat laudantium nesciunt excepturi nemo exercitationem nam quasi.</p>
+						<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam, dicta provident omnis voluptas laborum natus porro doloribus reprehenderit non saepe ut. Illo nemo ut incidunt dignissimos, neque consequuntur amet veritatis nobis repellendus possimus molestiae reprehenderit vitae, magni, porro voluptas? Nisi eius repellat laudantium nesciunt excepturi nemo exercitationem nam quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore tempora, quaerat magnam explicabo, molestiae sequi error fuga, incidunt officiis voluptate accusantium commodi vero. Ad vel magnam aperiam dolorem, cum enim.</p>
+					</div> <!-- card-body -->
+				</div> <!-- card -->
+				<div class="card bg-light mb-4">
+					<div class="card-body">
+						<h2 class="text-main text-capitalize">Lorem ipsum dolor sit amet.</h2>
+						<hr>
+						<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam, dicta provident omnis voluptas laborum natus porro doloribus reprehenderit non saepe ut. Illo nemo ut incidunt dignissimos, neque consequuntur amet veritatis nobis repellendus possimus molestiae reprehenderit vitae, magni, porro voluptas? Nisi eius repellat laudantium nesciunt excepturi nemo exercitationem nam quasi.</p>
+						<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam, dicta provident omnis voluptas laborum natus porro doloribus reprehenderit non saepe ut. Illo nemo ut incidunt dignissimos, neque consequuntur amet veritatis nobis repellendus possimus molestiae reprehenderit vitae, magni, porro voluptas? Nisi eius repellat laudantium nesciunt excepturi nemo exercitationem nam quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore tempora, quaerat magnam explicabo, molestiae sequi error fuga, incidunt officiis voluptate accusantium commodi vero. Ad vel magnam aperiam dolorem, cum enim.</p>
+					</div> <!-- card-body -->
+				</div> <!-- card -->
+				<div class="card bg-light mb-4">
+					<div class="card-body">
+						<h2 class="text-main text-capitalize">Lorem ipsum dolor sit amet.</h2>
+						<hr>
+						<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam, dicta provident omnis voluptas laborum natus porro doloribus reprehenderit non saepe ut. Illo nemo ut incidunt dignissimos, neque consequuntur amet veritatis nobis repellendus possimus molestiae reprehenderit vitae, magni, porro voluptas? Nisi eius repellat laudantium nesciunt excepturi nemo exercitationem nam quasi.</p>
+						<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam, dicta provident omnis voluptas laborum natus porro doloribus reprehenderit non saepe ut. Illo nemo ut incidunt dignissimos, neque consequuntur amet veritatis nobis repellendus possimus molestiae reprehenderit vitae, magni, porro voluptas? Nisi eius repellat laudantium nesciunt excepturi nemo exercitationem nam quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore tempora, quaerat magnam explicabo, molestiae sequi error fuga, incidunt officiis voluptate accusantium commodi vero. Ad vel magnam aperiam dolorem, cum enim.</p>
+					</div> <!-- card-body -->
+				</div> <!-- card -->
+			</div> <!-- /.col-md-8 -->
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<div class="card-header">
+						<h5 class="text-secondary m-0">Notices</h5>
+					</div> <!-- card-header -->
+					<div class="card-body">
+						<ul class="pl-3">
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+						</ul>
+					</div> <!-- card-body -->
+				</div> <!-- card -->
+				<div class="card mb-4">
+					<div class="card-header">
+						<h5 class="text-secondary m-0">News &amp; Events</h5>
+					</div> <!-- card-header -->
+					<div class="card-body">
+						<ul class="pl-3">
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+							<li><a href="#" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, id!</a></li>
+						</ul>
+					</div> <!-- card-body -->
+				</div> <!-- card -->
+			</div> <!-- /.col-md-4 -->
+		</div>
+	</div> <!-- container generic-content -->
+
+	<!-- footer -->
+	<footer class="bg-dark mt-4 py-3">
+		<div class="container">
+			<p class="m-0 text-secondary text-center">
+				Copyright &copy; 2020 IVL ltf. | All Rights Reserved.
+			</p>
+		</div>
+	</footer>
+
+	
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- custom script -->
+	<script src="main.js"></script>
+</body>
+</html>
