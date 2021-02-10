@@ -4,40 +4,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- cutom-stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-  <!-- Search Bar -->
-  <div class="container mb-5">
-    <div class="row">
-      <div id="searchBar" class="col-12">
-        <div class="input-group">
-          <input type="text" placeholder="Search" class="form-control">
-          <select class="custom-select" placeholder="Search">
-            <option selected>Choose Location</option>
-            <option value="1">India</option>
-            <option value="2">USA</option>
-            <option value="3">Australia</option>
-          </select>
-          <div class="input-group-append">
-            <button class="btn btn-primary px-5" type="button">Search</button>
+  <div class="container py-5">
+    <form onsubmit="return formSubmit();">
+      <div class="form-row align-items-center">
+        <div class="col-md-5">
+          <div class="input-group shadow-sm">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fa fa-search text-muted"></i></div>
+            </div>
+            <input type="text" class="form-control form-control-lg" id="inlineFormInputGroup" placeholder="Search">
           </div>
+          <!-- Search Bar -->
         </div>
+        <!-- .col -->
+        <div class="col-md-5">
+          <div class="input-group shadow-sm">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-compass"></i></label>
+            </div>
+            <select class="custom-select custom-select-lg form-control-lg" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">India</option>
+              <option value="2">USA</option>
+              <option value="3">Australia</option>
+            </select>
+          </div>          
+          <!-- Choose Location -->
+        </div>
+        <!-- .col -->
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+          <!-- Search Button -->
+        </div>
+        <!-- .col -->
       </div>
-    </div>
+    </form>
   </div>
+
   
   <!-- Projects clients task invoive -->
   <div class="container">
-    <div class="row">
-      <div id="projects" class="col-md-6 mb-4">
+    <div class="form-row">
+      <div id="projects" class="col-xl-6 col-lg-12 mb-4">
         <div class="d-flex justify-content-between">
-          <p><b>Projects</b></p>
-          <p><a class="text-decoration-none" href="#!"><small><b>Manage Projects</b></small></a></p>
+          <p><span class="small text-light text-uppercase px-2 py-1 rounded" style="background-color: #214263;">Projects</span></p>
+          <p><a href="#!"><small><b>Manage Projects</b></small></a></p>
         </div>
-        <div class="card">
+        <div class="card shadow-sm">
           <div class="card-body">
             <div class="row">
               <div class="col-sm-4">
@@ -119,13 +141,13 @@
         </div>
       </div> <!-- projects col-md-6-->
 
-      <div class="col-md-3 p-0 mb-4">
+      <div class="col-xl-3 col-md-6 mb-4">
         <div id="clients" class="mb-4">
           <div class="d-flex justify-content-between">
-            <p><b>Clients (5)</b></p>
-            <p><a class="text-decoration-none" href="#!"><small><b>View All</b></small></a></p>
+            <p><span class="small text-light text-uppercase px-2 py-1 rounded" style="background-color: #214263;">Clients (5)</span></p>
+            <p><a href="#!"><small><b>View All</b></small></a></p>
           </div>
-          <div class="card">
+          <div class="card shadow-sm">
             <div class="card-body">
               <div class="d-flex mb-3">
                 <div class="img"></div>
@@ -140,8 +162,8 @@
               <div class="d-flex mb-3">
                 <div class="img"></div>
                 <div class="wrapper pl-2">
-                  <p class="m-0"><b>Rudree</b></p>
-                  <p class="text-secondary mb-0"><small>rudree@gmail.com</small></p>
+                  <p class="m-0"><b>Ronit</b></p>
+                  <p class="text-secondary mb-0"><small>ronit21@gmail.com</small></p>
                 </div>
                 <div class="msgIcon">
                   <button class="btn btn-outline-secondary" title="Message"><b>#</b></button>
@@ -150,8 +172,8 @@
               <div class="d-flex">
                 <div class="img"></div>
                 <div class="wrapper pl-2">
-                  <p class="m-0"><b>Sadul</b></p>
-                  <p class="text-secondary mb-0"><small>sadul@gmail.com</small></p>
+                  <p class="m-0"><b>Prashant</b></p>
+                  <p class="text-secondary mb-0"><small>prashant@gmail.com</small></p>
                 </div>
                 <div class="msgIcon">
                   <button class="btn btn-outline-secondary" title="Message"><b>#</b></button>
@@ -162,10 +184,10 @@
         </div> <!-- clients -->
         <div id="bids">
           <div class="d-flex justify-content-between">
-            <p><b>My Bids (8)</b></p>
-            <p><a class="text-decoration-none" href="#!"><small><b>View All</b></small></a></p>
+            <p><span class="small text-light text-uppercase px-2 py-1 rounded" style="background-color: #214263;">My Bids (8)</span></p>
+            <p><a href="#!"><small><b>View All</b></small></a></p>
           </div>
-          <div class="card">
+          <div class="card shadow-sm">
             <div class="card-body">
               <p>Inc Corp. <span class="float-right"><a href="#!" class="text-decoration-none text-warning"><small><b>Pending</b></small></a></span></p><hr>
               <p>Jasper Tech <span class="float-right"><a href="#!" class="text-decoration-none text-warning"><small><b>Pending</b></small></a></span></p><hr>
@@ -176,19 +198,19 @@
         </div> <!-- bids -->
       </div> <!-- clients & bids col-md-3 -->
 
-      <div class="col-md-3">
+      <div class="col-xl-3 col-md-6">
         <div id="task" class="mb-4">
           <div>
-            <p><b>Task</b></p>
+            <p><span class="small text-light text-uppercase px-2 py-1 rounded" style="background-color: #214263;">Task</span></p>
           </div>
-          <div class="bg-primary" style="height: 224px; border-radius: 10px"></div>
+          <div class="bg-primary shadow-sm" style="height: 224px; border-radius: 10px"></div>
         </div>  <!-- end of task -->
         <div id="invoice">
           <div class="d-flex justify-content-between">
-            <p><b>Invoice</b></p>
-            <p><a class="text-decoration-none" href="#!"><small><b>View All</b></small></a></p>
+            <p><span class="small text-light text-uppercase px-2 py-1 rounded" style="background-color: #214263;">Invoice</span></p>
+            <p><a href="#!"><small><b>View All</b></small></a></p>
           </div>
-          <div class="card">
+          <div class="card shadow-sm">
             <div class="card-body">
               <p><b>Flip Corp.</b></p>
               <p>Client <span class="float-right">Edward Black</span></p>
@@ -205,6 +227,13 @@
 
   
 
+  <!-- script to show alert on form submission -->
+  <script>
+    function formSubmit(){
+      alert("Sorry! This form is just for display purpose.");
+      return false;
+    }
+  </script>
   
   
 </body>

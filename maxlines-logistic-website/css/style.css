@@ -11,6 +11,9 @@
 	justify-content: center;
 	align-items: center;
 }
+.sample-200{
+	height: 200px;
+}
 .bg-main{ background-color: var(--main); }
 .bg-submain { background-color: var(--submain); }
 .text-main { color: var(--main); }
