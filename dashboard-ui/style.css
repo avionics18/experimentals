@@ -5,6 +5,41 @@
   border-radius: 10px;
 }
 
+/*===========*/
+#navbar .menu *{
+  /*outline: 1px solid rgba(255,0,0,0.2);*/
+}
+#navbar .menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+#navbar .menu a{
+  display: block;
+  font-weight: 600;
+  padding: 25px 0 20px 0;
+  border-bottom: 5px solid transparent;
+  color: var(--secondary);
+  transition: 0.4s;
+}
+#navbar .menu a:hover,
+#navbar .menu li.active > a{
+  color: #222;
+  border-bottom-color: var(--primary);
+  text-decoration: none;
+}
+#navbar .menu a > .fa{
+  transition: 0.4s;
+}
+#navbar .menu a:hover > .fa,
+#navbar .menu li.active > a > .fa{
+  color: var(--primary);
+}
+#navbar .menu li{
+  margin-right: 30px;
+}
+
 
 #searchBar input{
   padding: 25px 10px;
