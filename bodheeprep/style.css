@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap');
+
+
+/* Utilities */
+.ff-others,
+p,
+a {
+  font-family: 'Raleway', sans-serif;
+}
+.ff-headings,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+}
+.fw-light {
+  font-weight: 300;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-bolder {
+  font-weight: 900;
+}
+.bg-lighter {
+  background-color: #ccc;
+}
+.text-lighter {
+  color: #ccc;
+}
+/* --------------------------------------- */
+
+/* NAVBAR */
+.logo {
+  width: 150px;
+  height: 50px;
+  background-color: #999;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-navbar {
+  background-color: #222;
+}
+.nav .nav-link {
+  padding: 20px;
+}
+.nav > .nav-item {
+  border-left: 1px solid #333;
+}
+.nav > .nav-item:last-child {
+  border-right: 1px solid #333;
+}
+.main-navbar .dropdown-menu a.text-warning:focus,
+.main-navbar .dropdown-menu a.text-warning:hover{
+  color: #000 !important;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(0deg, #333, #139ccf);
+}
+
+/* Courses */
+.card-image-wrapper {
+  height: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.card-image-wrapper > img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-heading-link{
+  color: var(--secondary);
+  text-decoration: none !important;
+  line-height: 1.8rem;
+  transition: 0.25s;
+}
+.card-heading-link:hover{
+  color: #000000;
+  background-color: rgba(255,193,7,0.5);
+}
+/* showcase */
+.showcase {
+  background-color: #222;
+}
+
+/*Clubs*/
+.clubs-wrapper{
+  border-radius: 1.3rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.65);
+}
+.clubs-wrapper:hover .clubs-content{
+  opacity: 0;
+}
+.clubs-content{
+  top: 0px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+  transition: 0.25s;
+}
+.clubs-content h2{
+  background-color: rgba(0,0,0,0.75);
+}

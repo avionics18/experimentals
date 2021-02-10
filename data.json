@@ -1,6 +1,14 @@
 {
   "websiteRemakes": [
     {
+      "title": "Bodheeprep",
+      "url": "./bodheeprep/index.html"
+    },
+    {
+      "title": "UpGrad",
+      "url": "./upgrad/index.html"
+    },
+    {
       "title": "Moorside School Website",
       "url": "./school-website/index.html"
     },

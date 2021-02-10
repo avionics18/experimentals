@@ -1,0 +1,92 @@
+/*UTILITIES*/
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+.fw-600{
+	font-weight: 600 !important;
+}
+.fw-900{
+	font-weight: 900 !important;
+}
+.bg-translucent{
+	background-color: rgba(255,255,255,0.2);
+}
+.square{
+	width: 100px;
+	height: 100px;
+}
+
+
+/*-----------------------------------------------------*/
+
+
+
+
+
+
+
+/*MAIN NAVBAR*/
+.main-navbar .nav-item a{
+	color: var(--dark) !important;
+}
+.main-navbar .nav-item:hover > .nav-link{
+	color: var(--danger) !important;
+}
+.main-navbar .nav-item a.dropdown-item:focus{
+	color: var(--danger) !important;
+	background-color: var(--light) !important;
+}
+.main-navbar .nav-item{
+	padding: 10px 0;
+}
+.main-navbar .dropdown-menu{
+	border: none;
+	border-bottom: 3px solid var(--danger);
+}
+
+/*HERO*/
+
+/*bs-carousel*/
+.hero img{
+	height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+#hero-carousel .carousel-control-prev,
+#hero-carousel .carousel-control-next{
+	width: 10%;
+}
+
+/*FAQ*/
+.faq{
+	background-color: #eff2f5;
+	border-top: 1px solid #e3ebf3;
+}
+
+/*SYLLABUS*/
+.syllabus{
+	background-color: var(--danger);
+}
+
+/*TOPICS*/
+.topics{
+	background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%) ,url('./images/cover-1.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*DEGREE*/
+.degree .nav-tabs .nav-link{
+	color: var(--light);
+	border: none;
+	border-radius: 0px;
+	border-bottom: 4px solid transparent;
+	transition: 0.25s;
+}
+.degree .nav-tabs .nav-link.active{
+	color: var(--light);
+	font-weight: 600;
+	border-bottom-color: var(--light) !important;
+	background-color: rgba(255,255,255,0.15);
+}
