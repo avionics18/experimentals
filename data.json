@@ -61,6 +61,10 @@
     {
       "title": "Responsive Navbar",
       "url": "./responsive-navbar/index.html"
+    },
+    {
+      "title": "Intersection Observer Example",
+      "url": "./intersectionObs/index.html"
     }
   ]
 }
