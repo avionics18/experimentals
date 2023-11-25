@@ -10,6 +10,19 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Inter & Oswald Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+	<!-- Font Styles -->
+	<style>
+		.font-heading {
+			font-family: 'Oswald', sans-serif;
+		}
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+	</style>
 </head>
 <body>
 
@@ -34,8 +47,9 @@
 	<!-- Brand Logo -->
 	<div id="brand" class="py-4 bg-danger">
 		<div class="container">
-			<h1 class="m-0 h4 text-light">
-				<i class="fa fa-grav mr-2"></i><b>SAMPLE</b> <span class="font-weight-light">WEBSITE</span>
+			<h1 class="m-0 h4 text-light font-heading d-flex align-items-center">
+				<i class="fa fa-grav fa-2x mr-2"></i>
+				<span><b>SAMPLE</b> WEBSITE</span>
 			</h1>
 		</div>
 	</div>
@@ -135,7 +149,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:void(0);">Executive Edu. &amp; Consultancy <i class="fa fa-caret-down"></i></a>
+					<a href="javascript:void(0);">Executive Consultancy <i class="fa fa-caret-down"></i></a>
 					<ul class="sub-menu">
 						<li><a href="#">About EE&amp;C</a></li>
 						<li><a href="#">In Company Programme</a></li>
@@ -225,7 +239,7 @@
 		<div class="container-fluid px-0" id="page-header">
 			<div id="page-header-cover">
 				<div class="container">
-					<h1 class="m-0">
+					<h1 class="m-0 font-heading">
 						<span>Program Objectives</span>
 					</h1>
 				</div>
@@ -236,30 +250,59 @@
 					<p class="m-0 small">
 						<a href="#" class="text-danger"><i class="fa fa-home"></i> Home</a>
 						<span> / </span>
-						<a href="#" class="text-danger">Post Graduate (PGP)</a>
+						<a href="#" class="text-danger">Post Graduate Programme (PGP)</a>
 						<span> / </span>
 						<span>Program Objectives</span>
 					</p>
 				</div>
 			</div>
 		</div> <!-- .page-header -->
-		<div class="container pt-4" id="page-content">
+		<div class="container py-5" id="page-content">
 			<div class="row">
 				<div class="col-lg-8 mb-3">
-					<div class="card bg-light shadow-sm">
-						<div class="card-body p-md-5 p-3">
+					<div class="card bg-light shadow-sm" id="program-objectives-tabcontent">
+						<div class="card-body p-md-5 p-3 fade show active" id="program-objectives-tabpane">
 							<p>The Post-Graduate Programme in Management is the flagship programme of IIM Raipur. The PGP is aimed at providing an overall development of the students and groom them as future business leader to successfully face the challenge of global competition and dynamic market scenario.</p>
-							<p>The objectives of two year Post-Graduate Programme are:</p>
-							<ul>
+							<p><b>The objectives of two year Post-Graduate Programme are:</b></p>
+							<ul class="m-0">
 								<li>To understand the socio-economic, technological, ecological and political environment of India and the world.</li>
 								<li>To hone the problem solving skills, increase the affinity to innovation and the passion for creativity.</li>
 								<li>To develop global mind set to meet the challenges of international and work in a cross-cultural environment.</li>
 								<li>To create socially responsible and globally competitive management graduates who can effectively contribute to inclusive growth of the society.</li>
 								<li>To develop a sense of social purpose for managerial decision-making and to develop leadership capabilities without compromising on ethical values.</li>
 							</ul>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci velit enim ipsa. Perspiciatis magni libero sint distinctio numquam excepturi laborum voluptas consectetur accusantium quasi, repellat iste iure possimus molestiae cupiditate qui quod natus saepe quidem. Eligendi sunt fuga reiciendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas doloremque voluptate rem adipisci? In eaque amet dolorem inventore totam id quo iste ut cupiditate aut, perspiciatis ea velit sequi atque assumenda accusantium vero explicabo ipsum animi at exercitationem iusto nobis.</p>
-							<p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro eum a, sit animi amet sapiente doloribus voluptatum accusantium voluptatem eius magni provident magnam perferendis necessitatibus placeat iste molestiae. Placeat delectus provident esse porro commodi consequatur nostrum rerum harum voluptate maxime omnis, consectetur eum. Vitae aut, quod consequuntur voluptates esse doloremque. Quod tempora aut maxime labore adipisci in veniam asperiores dolorem tenetur, eum illum at dolores modi dolore facere doloribus fugiat autem culpa laboriosam dicta. Officiis temporibus molestias accusamus, pariatur, provident totam, est reiciendis enim minus corrupti velit tempore illo labore asperiores ipsa illum rem impedit ipsum culpa tempora a deleniti eos eum expedita. Nesciunt, nisi ad animi voluptate, blanditiis dolores explicabo possimus molestias totam corporis cum obcaecati inventore itaque.</p>
 						</div>
+						<!-- #program-objectives-tabpane -->
+						<div class="card-body p-md-5 p-3 fade" id="curriculum-tabpane">
+							<p>The PGP extends over a period of two years, involving six trimesters with a summer internship at a prestigious organization. The programme is carefully designed keeping in view the changing needs of the global business scenario.</p>
+							<p>During the first year, students are exposed to basic concepts in the areas of Marketing, Finance, Quantitative Methods, Operations, Behavioural Sciences and Strategy through the core courses. These lay the foundations for all the functional areas of management and help the students develop an intricate understanding about the different facets involved.</p>
+							<p>In the second year, students choose from a range of electives to concentrate on functional areas of their interest. The areas offered at present are Finance, Operations, Marketing, Human Resources, Strategy and General Management.</p>
+							<p>A lot of emphasis during the PGP has been laid on industry based and research projects. The students, over the period of years are expected to conduct research on various aspects of management and subject it to the scrutiny and evaluation of the faculty. This is aimed at increasing the levels of comprehension the students possess in the respective topics.</p>
+							<p>
+								<img class="img-fluid" src="https://backend.insideiim.com/wp-content/uploads/2020/02/PGP-Finance-vs-PGP1.png" alt="IIM Raipur PGP Curriculum">
+							</p>
+						</div>
+						<!-- #curriculum-tabpane -->
+						<div class="card-body p-md-5 p-3 fade" id="pedagogy-tabpane">
+							<p>The pedagogy at IIM Raipur presents a mix of lectures, case studies (both Harvad, International and Indian cases), business games, simulation exercises, rolel plays, group discussions, field visits, industry based projects and a lot of self-realized conceptual reflection. It has been designed keeping in mind the effect each of these methods have on molding the minds of young and self-motivated students.</p>
+							<p>
+								<img src="https://poetsandquants.com/wp-content/uploads/sites/5/2021/09/Syndicates-2048x1536.jpg" alt="IIM ahmedabad Class" class="img-fluid">
+							</p>
+							<p>The case studies help the students to keep in touch with the best predicaments faced in the world of management. The most interesting part of learning comes from the brainstorming sessions amongst the students themselves regarding various issues.</p>
+						</div>
+						<!-- #pedagogy-tabpane -->
+						<div class="card-body p-md-5 p-3 fade" id="pgp-manual-tabpane">
+							<p>Download the <b>PGP Manual</b> for the year 2023 - <a href="#">Download</a></p>
+						</div>
+						<!-- #pgp-manual-tabpane -->
+						<div class="card-body p-md-5 p-3 fade" id="academic-calendar-tabpane">
+							<p><b>The following Academic Calendars are tentative and will change as per the guidelines received from MHRD and Govt. of Chhattisgarh from time to time</b></p>
+							<ul>
+								<li><a href="#">Academic Calender PGP Term IV-VI</a></li>
+								<li><a href="#">Academic Calender PGP Term I-III</a></li>
+							</ul>
+						</div>
+						<!-- #academic-calendar-tabpane -->
 					</div>
 				</div> <!-- .col-lg-8 -->
 				<div class="col-lg-4 mb-3">
@@ -269,11 +312,11 @@
 						</div>
 						<div class="card-body bg-light">
 							<div class="list-group shadow">
-								<a href="#" class="list-group-item list-group-item-action text-light bg-dark active"><i class="fa fa-chevron-circle-right mr-2"></i>Program Objectives</a>
-								<a href="#" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>Curriculum</a>
-								<a href="#" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>Pedagogy</a>
-								<a href="#" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>PGP Manual</a>
-								<a href="#" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>Academic Calendar</a>
+								<a href="#program-objectives-tabpane" data-toggle="tab" class="list-group-item list-group-item-action text-light bg-dark active"><i class="fa fa-chevron-circle-right mr-2"></i>Program Objectives</a>
+								<a href="#curriculum-tabpane" data-toggle="tab" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>Curriculum</a>
+								<a href="#pedagogy-tabpane" data-toggle="tab" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>Pedagogy</a>
+								<a href="#pgp-manual-tabpane" data-toggle="tab" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>PGP Manual</a>
+								<a href="#academic-calendar-tabpane" data-toggle="tab" class="list-group-item list-group-item-action text-light bg-dark"><i class="fa fa-chevron-circle-right mr-2"></i>Academic Calendar</a>
 							</div>
 						</div>
 					</div>
@@ -282,6 +325,69 @@
 		</div> <!-- .page-content -->
 	</div>
 	<!-- Main Content -->
+
+
+
+
+
+	<footer class="bg-dark py-5">
+	  <div class="container py-4">
+	    <div class="row">
+	      <div class="col-md-7">
+	        <div class="row">
+	          <div class="col-md-4 mb-md-0 mb-4">
+	            <h2 class="text-white font-heading mb-4">About</h2>
+	            <ul class="list-unstyled">
+	              <li><a href="#" class="d-block">Out story</a></li>
+	              <li><a href="#" class="d-block">Awards</a></li>
+	              <li><a href="#" class="d-block">Our Team</a></li>
+	              <li><a href="#" class="d-block">Career</a></li>
+	            </ul>
+	          </div>
+	          <div class="col-md-4 mb-md-0 mb-4">
+	            <h2 class="text-white font-heading mb-4">Company</h2>
+	            <ul class="list-unstyled">
+	              <li><a href="#" class="d-block">Our services</a></li>
+	              <li><a href="#" class="d-block">Clients</a></li>
+	              <li><a href="#" class="d-block">Contact</a></li>
+	              <li><a href="#" class="d-block">Press</a></li>
+	            </ul>
+	          </div>
+	          <div class="col-md-4 mb-md-0 mb-4">
+	            <h2 class="text-white font-heading mb-4">Resources</h2>
+	            <ul class="list-unstyled">
+	              <li><a href="#" class="d-block">Blog</a></li>
+	              <li><a href="#" class="d-block">Newsletter</a></li>
+	              <li><a href="#" class="d-block">Privacy Policy</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-md-5 mb-md-0 mb-4">
+	        <h2 class="text-white font-heading mb-4">Subscribe</h2>
+	        <form action="#" class="subscribe-form">
+	          <div class="form-group d-flex">
+	            <input type="text" class="form-control rounded-0" placeholder="Enter email address" />
+	            <button type="button" class="form-control btn btn-danger rounded-0">Subscribe</button>
+	          </div>
+	          <span class="text-secondary">Get digital marketing updates in your mailbox</span>
+	        </form>
+	      </div>
+	    </div>
+	    <div class="row mt-5 pt-4 border-top">
+	      <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
+	        <p class="copyright mb-0 text-light">
+	          Copyright ©
+	          <script>
+	            document.write(new Date().getFullYear());
+	          </script>
+	          All rights reserved. | This template is made with <i class="fa fa-heart text-danger" aria-hidden="true"></i>.
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</footer>
+	<!-- footer -->
 
 
 

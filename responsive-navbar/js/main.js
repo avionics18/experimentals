@@ -1,5 +1,5 @@
 
-// Activate Menu through Hamberger Button
+// ### Activate Menu through Hamberger Button
 function activateMenu(){
   // AIM :
   // Select the ul.menu and display it when clicked and if clicked again hide it but
@@ -9,7 +9,7 @@ function activateMenu(){
   var navBtn = document.querySelector("#main-navbar-toggler > button");
   // STEP 2
   if(ulMenu.classList.contains("d-block")){
-    navBtn.innerHTML = "MENU <i class=\"fa fa-bars ml-1\"><\/i>";
+    navBtn.innerHTML = 'MENU <i class="fa fa-bars ml-1"></i>';
     var dBlocks = ulMenu.querySelectorAll(".d-block");
     dBlocks.forEach(item=>{
       item.classList.remove("d-block");
@@ -19,7 +19,7 @@ function activateMenu(){
   // STEP 1
   else {
     ulMenu.classList.toggle("d-block");
-    navBtn.innerHTML = "CLOSE <i class=\"fa fa-times ml-1\"><\/i>";
+    navBtn.innerHTML = 'CLOSE <i class="fa fa-times ml-1"></i>';
   }
 }
 
