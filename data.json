@@ -27,6 +27,10 @@
   ],
   "uiDesign": [
     {
+      "title": "Interactive Rating Component",
+      "url": "./interactive-rating-component-main/index.html"
+    },
+    {
       "title": "Horizontal Scroll Posts",
       "url": "./horizontal-scroll-posts/index.html"
     },

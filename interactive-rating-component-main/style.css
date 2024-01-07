@@ -1,0 +1,122 @@
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: #121417;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  font-weight: 500;
+  font-family: "Overpass", sans-serif;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.card {
+  width: 420px;
+  background-color: #161d27;
+  background: radial-gradient(circle farthest-side at 50% 0%, #232a34, #161d27);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.card-body {
+  padding: 2.5rem;
+}
+.card-icon i {
+  display: inline-block;
+  background-color: #232a34;
+  color: #fb7413;
+  padding: 1rem;
+  border-radius: 100px;
+}
+.card-title {
+  font-size: 2rem;
+  color: white;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.card-text {
+  color: #959eac;
+  line-height: 1.5rem;
+}
+.card .rating-component {
+  margin-top: 1.5rem;
+}
+.card .rating-component__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.card .rating-component__options button {
+  width: 50px;
+  height: 50px;
+  padding: 8px 10px 2px 10px;
+  border-radius: 100%;
+  border: none;
+  background-color: #2b313b;
+  color: #959eac;
+  font-size: 1.15rem;
+}
+.card .rating-component__options button:hover {
+  background-color: #fb7413;
+  color: white;
+}
+.card .rating-component__options button.active {
+  background-color: #959eac;
+  color: white;
+}
+.card .rating-component__submit-btn {
+  width: 100%;
+  font-size: 1.15rem;
+  background-color: #fb7413;
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  padding: 16px 0px 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.card .rating-component__submit-btn:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+#thank-u {
+  text-align: center;
+}
+#thank-u #rating-output {
+  margin-top: 2rem;
+}
+#thank-u #rating-output span {
+  display: inline-block;
+  background-color: #2b313b;
+  color: #fb7413;
+  font-weight: 500;
+  padding: 12px 18px 6px 18px;
+  border-radius: 10rem;
+}

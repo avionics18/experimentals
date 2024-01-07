@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&amp;display=swap">
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-body">
+      <div class="fadeIn" id="feedback">
+        <div class="card-icon"><i class="fas fa-star"></i></div>
+        <h2 class="card-title">How did we do?</h2>
+        <p class="card-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <form class="rating-component" id="feedback-form">
+          <div class="rating-component__options">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+          <button class="rating-component__submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="fadeIn d-none" id="thank-u">
+        <div class="thank-u-img">
+          <img src="images/illustration-thank-you.svg" alt="Thank you image">
+        </div>
+        <div id="rating-output"><span>You selected <b id="rating-value"></b> out of 5</span></div>
+        <h2 class="card-title">Thank you!</h2>
+        <p class="card-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch! <a id="back-btn" href="#!">Go Back &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>
