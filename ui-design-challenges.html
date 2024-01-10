@@ -35,44 +35,63 @@
 
   <section class="py-5" id="projects">
     <div class="container">
-      <div class="row"></div>
+      <div class="row">
+        <div class="mx-auto my-4">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
       <!-- .row -->
     </div>
     <!-- .container -->
   </section> 
 
 
+  <!-- Each .card Handlerbars Template -->
+  <script id="cardTemplate" type="text/x-handlebars-template">
+    {{#each projects}}
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <div class="card h-100 bg-dark border-secondary shadow-sm">
+          <div class="card-body">
+            <h5 class="m-0">
+              <a href="{{url}}" class="text-white font-weight-light">{{title}}</a>
+            </h5>
+          </div>
+          <div class="card-footer">
+            <a href="{{url}}" class="btn btn-primary btn-sm">View<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </script>
+
+  <!-- Handlebars CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Js code to retrive data and display using Handlebars -->
   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("DOM fully loaded and parsed");
+      // fetching data.json file
+      fetch("./data.json")
+        .then(res => res.json())
+        .then(data => renderCards(data.uiDesigns))
+        .catch(err => {
+          alert("Oops! There was an error in fetching the data. For more details see the console log.");
+          console.log(err);
+        });
 
-    // display the projects for ui design challenges
-    function displayUIDesign(items){
-      let row = document.querySelector("#projects .row");
-      items.forEach(item => {
-        var col = '<div class="col-lg-3 col-md-4 col-sm-6 mb-3">'+
-                  '<div class="card h-100 bg-dark border-secondary shadow-sm">'+
-                  '<div class="card-body">'+
-                  '<h5 class="m-0">'+
-                  '<a href="'+item.url+'" class="text-white font-weight-light">'+item.title+'</a>'+
-                  '</h5>'+
-                  '</div>'+
-                  '<div class="card-footer">'+
-                  '<a href="'+item.url+'" class="btn btn-primary btn-sm">View<i class="fas fa-long-arrow-alt-right ml-2"></i></a>'+
-                  '</div>'+
-                  '</div>'+
-                  '</div>';
+      // display the projects for ui design challenges
+      function renderCards(projectsArr){
+        let rawTemplate = document.getElementById("cardTemplate").innerHTML;
+        let compiledTemplate = Handlebars.compile(rawTemplate);
+        // you need to pass {projects: [{}, {}, ...]}
+        let generatedHTML = compiledTemplate({projects: projectsArr});
 
-        row.innerHTML += col;
-
-      });
-    }
-
-    // fetching data.json file
-    fetch("./data.json")
-    .then(res => res.json())
-    .then(data => displayUIDesign(data.uiDesign))
-    .catch(err => {
-      alert("Oops! There was an error in fetching the data. For more details see the console log.");
-      console.log(err);
+        const row = document.querySelector("#projects .row");
+        row.innerHTML = generatedHTML;
+      }
     });
   </script>
   
