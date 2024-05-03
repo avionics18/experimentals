@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of CSE | IIT Madras</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/simplex/bootstrap.min.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #ebebeb;
+    }
+
+    .font-serif {
+      font-family: serif;
+    }
+    .font-sans {
+      font-family: sans-serif;
+    }
+
+    #hero-carousel .carousel-caption {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #313131;
+      background: -webkit-linear-gradient(0deg, #222, #444);
+      background: linear-gradient(0deg, #222, #444);
+      padding: 1.25rem;
+      border-top: 2px solid var(--bs-primary);
+    }
+
+    main .card-body a {
+      text-decoration: none;
+    }
+    main .card-body a:hover, main .card-body a:focus, main .card-body a:active {
+      text-decoration: underline;
+    }
+
+    #deptDetails-tabList.nav-tabs .nav-link.active {
+      font-weight: bold;
+    }
+
+    /*  NewsTicker  */
+    .ticker {
+      background-color: var(--bs-black);
+    }
+    .ticker .ticker-content {
+      display: flex;
+      align-items: center;
+    }
+    .ticker .ticker-content .ticker__item {
+      color: var(--bs-primary-bg-subtle);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="latest-notifications" class="ticker border-bottom border-primary">
+    <div class="container">
+      <div class="d-flex justify-content-end gap-3">
+        <div class="ticker-icon order-2 p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+          </svg>
+        </div>
+        <div class="ticker-content order-1">
+          <div class="ticker__item">Letterpress chambray brunch is on the set for 5 day, kindly receive all the packets.</div>
+          <!-- <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
+          <div class="ticker__item">Ugh PBR&amp;B kale chips Echo Park.</div>
+          <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck.</div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header class="bg-dark py-4">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <img width="80" src="http://www.cse.iitm.ac.in/images/cse-iitm.png" alt="CSE IIT Madras Logo">
+        <div class="ms-3 font-serif">
+          <h3 class="text-white">Department of Computer Science &amp; Engineering</h3>
+          <h6 class="text-light">Indian Institute of Technology Madras, Chennai, India</h6>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container">
+      <span class="navbar-brand fw-bold d-inline d-lg-none">MENU</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">People</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Faculty</a></li>
+              <li><a class="dropdown-item" href="#">Staff</a></li>
+              <li><a class="dropdown-item" href="#">Research Scholars</a></li>
+              <li><a class="dropdown-item" href="#">Students</a></li>
+              <li><a class="dropdown-item" href="#">Join Us!</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Areas of Research</a></li>
+              <li><a class="dropdown-item" href="#">Research Labs</a></li>
+              <li><a class="dropdown-item" href="#">Research Centers</a></li>
+              <li><a class="dropdown-item" href="#">Research Publications</a></li>
+              <li><a class="dropdown-item" href="#">Sponsored Projects</a></li>
+              <li><a class="dropdown-item" href="#">Research Patents</a></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+              <li><a class="dropdown-item" href="#">Theses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Programmes</a></li>
+              <li><a class="dropdown-item" href="#">Curriculum</a></li>
+              <li><a class="dropdown-item" href="#">Courses</a></li>
+              <li><a class="dropdown-item" href="#">Time Table</a></li>
+              <li><a class="dropdown-item" href="#">Moodle</a></li>
+              <li><a class="dropdown-item" href="#">Outreach</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Department Events</a></li>
+              <li><a class="dropdown-item" href="#">Department Seminar</a></li>
+              <li><a class="dropdown-item" href="#">PhD Seminar</a></li>
+              <li><a class="dropdown-item" href="#">MS Seminar</a></li>
+              <li><a class="dropdown-item" href="#">PhD Defence</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">E-Services</a></li>
+              <li><a class="dropdown-item" href="#">Library</a></li>
+              <li><a class="dropdown-item" href="#">CS Office</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Awards</a></li>
+              <li><a class="dropdown-item" href="#">Distinguished Alumni</a></li>
+              <li><a class="dropdown-item" href="#">Statistics</a></li>
+              <li><a class="dropdown-item" href="#">History</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card border shadow-sm mb-4">
+            <div class="card-header border-bottom py-3">
+              <h5 class="m-0 font-serif fw-bold">Latest @ CSE</h5>
+            </div>
+            <div class="card-body py-3 px-0">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item">
+                  <span>Jan 2024</span> : <a href="#!">ACM workshop on Research Opportunity in Computer Science (ROCS)</a>
+                </li>
+                <li class="list-group-item">
+                  <span>Jan 2024</span> : <a href="#!">Dr. Rupesh Nasre has been promoted to the post of Professor</a>
+                </li>
+                <li class="list-group-item">
+                  <span>Jan 2024</span> : <a href="#!">Dr. Shweta Agrawal has been promoted to the post of Professor</a>
+                </li>
+                <li class="list-group-item">
+                  <span>Jan 2024</span> : <a href="#!">Professor B. Ravindran has been elected as Fellow of INAE</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-end">
+              <a class="btn btn-sm btn-outline-dark" href="#!">View All &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card border shadow-sm mb-4">
+            <div class="card-header border-bottom py-3">
+              <h5 class="m-0 font-serif fw-bold">Quick Links</h5>
+            </div>
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush rounded small">
+                <li class="list-group-item">
+                  <a href="#!">Faculty Recruitment</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Admissions - Recommended Candidates - Nov'23</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Current Courses</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Course Time Table</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Research Labs</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Summer Research Fellowship 2023</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Dept. Grievance Resoltuion Committee</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">UG &amp; PG Curriculum</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Minor Streams</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#!">Faculty Websites</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- .col-lg-3 - Left Sidebar -->
+        <div class="col-lg-6">
+          <div id="hero-carousel" class="carousel slide mb-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Slide1.jpg" class="d-block w-100" alt="cse">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6 class="fw-bold">Bharat Hacathon 2.0</h6>
+                  <p class="mb-0 small">The 3-Day fest where students create, break &amp; build products. More than 300 teams registered for the event.</p>
+                </div>
+              </div>
+              <!-- Carousel Item -->
+              <div class="carousel-item active">
+                <img src="img/Slide2.jpg" class="d-block w-100" alt="cse">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6 class="fw-bold">Student Life</h6>
+                  <p class="mb-0 small">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <!-- Carousel Item -->
+              <div class="carousel-item active">
+                <img src="img/Slide3.jpg" class="d-block w-100" alt="cse">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6 class="fw-bold">Working on Dijkitras Algorithm</h6>
+                  <p class="mb-0 small">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <!-- Carousel Item -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- .carousel -->
+
+          <ul class="nav nav-tabs" id="deptDetails-tabList" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="aboutDept-tab" data-bs-toggle="tab" data-bs-target="#aboutDept-tabPane" type="button" role="tab" aria-controls="aboutDept-tabPane" aria-selected="true">About the Dept.</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="msgFromHOD-tab" data-bs-toggle="tab" data-bs-target="#msgFromHOD-tabPane" type="button" role="tab" aria-controls="msgFromHOD-tabPane" aria-selected="false">Message from the HoD</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="deptDetails-tabContent">
+            <div class="tab-pane fade show active" id="aboutDept-tabPane" role="tabpanel" aria-labelledby="aboutDept-tab" tabindex="0">
+              <div class="p-4 bg-white border border-top-0 rounded-bottom shadow-sm small">
+                <p>Global excellence and local relevance in research, teaching, and technology development is the vision of the Department. The Department was started as the Computer Centre in 1973 with the acquisition of an IBM 370, perhaps the most powerful computer in India at that time. It offered M.Tech, M.S and PhD degree programmes. In 1983, the B.Tech degree programme was started.</p>
+                <p>Today the Department has a vibrant student body numbering about 700. Over 60% are postgraduate, mostly supported by scholarships. The Department also offers several attractive industry-sponsored Fellowships for outstanding PhD scholars and liberally supports participation in top-ranking international conferences.</p>
+                <p>The department has been funded by <a href="#">FIST program from DST, Govt. of India</a> in 2002 and 2017. The <a href="#">Secure Systems Laboratory</a> is funded by FIST program 2017.</p>
+                <p>The report on the department activities presented by the Head of the Department at the Department Degree Distribution Program, 2020 is available here.</p>
+                <p>The video of the Department Degree Distribution Program is now <a href="#">available here</a>.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="msgFromHOD-tabPane" role="tabpanel" aria-labelledby="msgFromHOD-tab" tabindex="0">
+              <div class="p-4 bg-white border border-top-0 rounded-bottom shadow-sm small">
+                <h4 class="font-serif mb-3">Message from the Head of Department</h4>
+                  <p>Welcome to the Department of Computer Science and Engineering at IIT Madras. IIT Madras was ranked first amongst several other similar Research and Teaching institutions in Engineering, for the continuous seventh time in the 2022 edition of National Institute Ranking Framework established by the Ministry for Human Resources Development (MHRD), the Government of India. IIT Madras was ranked amongst the top 50 Asian Universities in the QS rankings 2018.</p>
+                  <p>The Department started as the Computer Centre in 1973 with the acquisition of an IBM 370 Computer. It presently offers B. Tech., dual-degree B.Tech./ M.Tech., M.Tech., M.S., Ph.D. degree programmes. A dual-degree B.Tech/M.Tech. program in data science, open to all B.Tech. students of IIT Madras, has been started from Jan. 2018.</p>
+                  <p>The department has a vibrant student body numbering around 700 and faculty numbering nearly 35. About 60% of students are postgraduates, mostly supported by government of India scholarships and research projects. The Departments also offers several attractive industry-sponsored fellowships for outstanding Ph.D. scholars.</p>
+                  <p>The vision of the CSE Department is Global Excellence and Local Relevance in Research, teaching, and technology development in Computer Science and Engineering. In pursuit of this vision, the Department is actively engaged in research activities in various research areas.</p>
+                  <p>The Department’s research activities have been funded by several Government organizations such as Department of Science & Technology (DST), Ministry Of Electronics & Information Technology (MeiTY), and Defence Research and Development Organisation (DRDO); and by several industries including Accenture, Amazon, Ciena, Google, Hitachi, IBM, Intel, Microsoft, Tata Power Corporation, and VMWare. Several of our alumni hold important positions in the industry and academia worldwide. Students have been recently placed, both in India and abroad, in several leading national and international companies including Adobe, Apple, Flipkart, Goldman Sachs, Google, IBM, Intel, Juniper, LinkedIn, Microsoft, Ola, Oracle, Paypal, Qualcomm, Samsung, Uber, and Visa. Many Ph.D. graduates are serving as faculty members, both in India and abroad, in reputed educational institutions such as Indian Institute of Science Bangalore, Institute of Mathematical Sciences, IIT Bombay, IIT Kanpur, IIT Kharagpur, IIT Madras, IIT Guwahati, IIT Hyderabad, IIT Jodhpur, IIT Dharwad, IIT Mandi, IIT Palakkad, IIT Tirupati, IIIT Bangalore, IIITDM Kancheepuram, NIT Calicut, NIT Trichy, Iowa State University, Queen’s University Belfast, and National University of Singapore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .col-lg-8 Center Content -->
+        <div class="col-lg-3">
+          <div class="card border shadow-sm">
+            <div class="card-header border-bottom py-3">
+              <h5 class="m-0 font-serif fw-bold">Announcements</h5>
+            </div>
+            <div class="card-body px-0 py-3">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item">
+                  <span>Apr 12, 2024</span> : <a href="#!">CSE Bytes - April Edition</a>
+                </li>
+                <li class="list-group-item">
+                  <span>Mar 22, 2024</span> : <a href="#!">CSE Bytes - March Edition</a>
+                </li>
+                <li class="list-group-item">
+                  <span>Feb 16, 2024</span> : <a href="#!">CSE Bytes - Feb Edition</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-end">
+              <a class="btn btn-sm btn-outline-dark" href="#!">View All &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- .col-lg-3 - Right Sidebar -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-top border-primary border-5 bg-black">
+    <div class="container">
+      <footer class="row py-5">
+        <div class="col-lg-3 mb-3">
+          <a href="/" class="d-flex align-items-center mb-3">
+            <img width="80" src="http://www.cse.iitm.ac.in/images/cse-iitm.png" alt="CSE IIT Madras Logo">
+          </a>
+          <h5 class="text-white font-serif">Computer Science &amp; Engineering</h5>
+          <h5 class="text-secondary font-serif fw-bold">IIT Madras &copy; 2024</h5>
+        </div>
+        
+        <div class="col-lg-2 offset-lg-3 mb-3">
+          <h5 class="text-uppercase text-light mb-3">Resources</h5>
+          <ul class="nav flex-column align-items-start small">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-lg-2 mb-3">
+          <h5 class="text-uppercase text-light mb-3">Health Care</h5>
+          <ul class="nav flex-column align-items-start small">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-lg-2 mb-3">
+          <h5 class="text-uppercase text-light mb-3">Online Learning</h5>
+          <ul class="nav flex-column align-items-start small">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-primary">About</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </footer>
+
+    
+    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Latest Notification Ticker -->
+  <script></script>
+  
+</body>
+</html>

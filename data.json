@@ -23,6 +23,10 @@
     {
       "title": "Maxlines Logistic Website",
       "url": "./maxlines-logistic-website/index.html"
+    },
+    {
+      "title": "Dept. of CSE IIT Madras",
+      "url": "./iitm-cse/index.html"
     }
   ],
   "uiDesigns": [
@@ -69,6 +73,10 @@
     {
       "title": "Intersection Observer Example",
       "url": "./intersectionObs/index.html"
+    },
+    {
+      "title": "Jquery Responsive Navbar [Updated]",
+      "url": "./jquery-navbar/index.html"
     }
   ]
 }

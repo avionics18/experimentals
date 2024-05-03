@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IIT (ISM) Dhanbad</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+		:root {
+			--navbar-bg: #222;
+			--navbar-dark-100: #333;
+			--navbar-dark-200: #444;
+			--navbar-dark-300: #555;
+			--navbar-zindex: 999;
+			--navbar-link-color: #eee;
+			/* Can be changed individually for each submenus	*/
+			--navbar-submenu-width: 200px;
+		}
+
+		body {
+			font-family: "DM Sans", sans-serif;
+			background-color: #c6ddf0ff;
+			background-color: #c6ddf0ff;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #2a2b2aff;
+			font-weight: 700;
+		}
+
+		p {
+			color: #5e4955ff;
+			font-size: 1.15rem;
+			line-height: 1.5rem;
+		}
+
+		header {
+			padding: 1.5rem 0;
+		}
+
+		.container {
+			width: 85%;
+			max-width: 1024px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.content {
+			background-color: #fff;
+			padding: 1rem 1.75rem;
+			margin: 2rem 0;
+		}
+		.content .heading {
+			font-size: 1.75rem;
+			font-weight: 300;
+		}
+
+		#main-navbar {
+			background-color: var(--navbar-bg);
+			position: relative;
+			z-index: var(--navbar-zindex);
+		}
+		#main-navbar .mobile-nav-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 0;
+		}
+		#main-navbar .mobile-nav-content span {
+			color: var(--navbar-link-color);
+		}
+		#main-navbar .mobile-nav-content #menu-toggler {
+			background-color: transparent;
+			border: 1px solid var(--navbar-link-color);
+			color: var(--navbar-link-color);
+			padding: 6px 8px;
+			cursor: pointer;
+		}
+		#main-navbar .mobile-nav-content #menu-toggler:hover, #main-navbar .mobile-nav-content #menu-toggler:focus, #main-navbar .mobile-nav-content #menu-toggler.active {
+			background-color: var(--navbar-link-color);
+			color: var(--navbar-bg);
+		}
+		#main-navbar .mobile-nav-content #menu-toggler .fa-bars {
+			display: initial;
+		}
+		#main-navbar .mobile-nav-content #menu-toggler .fa-close {
+			display: none;
+		}
+		#main-navbar .mobile-nav-content #menu-toggler.active .fa-bars {
+			display: none;
+		}
+		#main-navbar .mobile-nav-content #menu-toggler.active .fa-close {
+			display: initial;
+		}
+		#main-navbar .menu {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			display: none;
+			align-items: stretch;
+			flex-direction: column;
+			border-top: 1px solid var(--navbar-dark-200);
+		}
+		#main-navbar .menu.active {
+			display: flex;
+		}
+		#main-navbar .menu li a {
+			color: var(--navbar-link-color);
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 4px;
+			padding: 12px 16px;
+		}
+		#main-navbar .menu li a:hover {
+			background-color: var(--navbar-dark-100);
+		}
+		#main-navbar .menu li a .fa {
+			rotate: -90deg;
+			transition: all 0.25s;
+		}
+		#main-navbar .menu li.active > a {
+			background-color: var(--navbar-dark-100);
+		}
+		#main-navbar .menu li.active > a > .fa {
+			rotate: 0deg;
+		}
+		#main-navbar .menu li.active > .submenu {
+			display: flex;
+		}
+		#main-navbar .menu .submenu {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			display: none;
+			flex-direction: column;
+			background-color: var(--navbar-dark-100);
+			animation: fadeIn 0.5s;
+		}
+		#main-navbar .menu .submenu li a {
+			padding: 8px 16px 8px 24px;
+		}
+		#main-navbar .menu .submenu li a:hover {
+			background-color: var(--navbar-dark-200);
+		}
+		#main-navbar .menu .submenu li.active > a {
+			background-color: var(--navbar-dark-200);
+		}
+		#main-navbar .menu .submenu li.has-dropdown.active > a {
+			border-bottom: 1px solid var(--navbar-dark-300);
+		}
+		#main-navbar .menu .submenu .submenu {
+			background-color: var(--navbar-dark-200);
+		}
+		#main-navbar .menu .submenu .submenu li a {
+			padding: 8px 16px 8px 32px;
+		}
+		#main-navbar .menu .submenu .submenu li a:hover {
+			background-color: var(--navbar-dark-300);
+		}
+		#main-navbar .menu .submenu .submenu li.active > a {
+			background-color: var(--navbar-dark-300);
+		}
+
+		@media screen and (min-width: 1024px) {
+			#main-navbar .mobile-nav-content {
+				display: none;
+			}
+			#main-navbar .menu {
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				border: none;
+			}
+			#main-navbar .menu li {
+				position: relative;
+			}
+			#main-navbar .menu li a .fa {
+				rotate: 0deg;
+				transition: all 0.25s;
+			}
+			#main-navbar .menu .submenu {
+				width: var(--navbar-submenu-width);
+				position: absolute;
+				top: 100%;
+			}
+			#main-navbar .menu .submenu li a {
+				padding: 8px 16px;
+			}
+			#main-navbar .menu .submenu li.active > a > .fa {
+				rotate: -90deg;
+			}
+			#main-navbar .menu .submenu li.has-dropdown.active > a {
+				border-bottom: none;
+			}
+			#main-navbar .menu .submenu .submenu {
+				width: var(--navbar-submenu-width);
+				top: 0;
+				left: 100%;
+			}
+			#main-navbar .menu .submenu .submenu li a {
+				padding: 8px 16px;
+			}
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<h1>Indian Institute of Technology (ISM) Dhanbad</h1>
+		</div>
+	</header>
+
+	<div id="main-navbar">
+	  <div class="container">
+	    <div class="mobile-nav-content">
+	      <span><b>MENU</b></span><button id="menu-toggler"><i class="fa fa-bars"> </i><i class="fa fa-close"> </i></button>
+	    </div>
+	    <ul class="menu">
+	      <li>
+	        <a href="#!"><i class="fa fa-home"></i></a>
+	      </li>
+	      <li>
+	        <a href="#!">About</a>
+	        <ul class="submenu">
+	          <li>
+	            <a href="#!">Overview</a>
+	            <ul class="submenu">
+	              <li><a href="#!">Overview</a></li>
+	              <li><a href="#!">Vision &amp; Mission</a></li>
+	              <li><a href="#!">History</a></li>
+	            </ul>
+	          </li>
+	          <li>
+	            <a href="#!">Administration</a>
+	            <ul class="submenu">
+	              <li><a href="#!">Administration</a></li>
+	              <li><a href="#!">Chairman</a></li>
+	              <li><a href="#!">Director</a></li>
+	              <li><a href="#!">Deputy Director</a></li>
+	              <li><a href="#!">Deans</a></li>
+	              <li><a href="#!">Registrar</a></li>
+	              <li><a href="#!">Associate Deans</a></li>
+	              <li><a href="#!">Faculty In-Charge</a></li>
+	              <li><a href="#!">HoDs</a></li>
+	              <li><a href="#!">Library In-Charge</a></li>
+	              <li><a href="#!">General Administration</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="#!">Reports</a></li>
+	          <li><a href="#!">Statutes of IIT(ISM)</a></li>
+	          <li><a href="#!">MoM for BoG</a></li>
+	        </ul>
+	      </li>
+	      <li>
+	        <a href="#!">Admissions</a>
+	        <ul class="submenu">
+	          <li><a href="#!">JEE (Advanced)</a></li>
+	          <li><a href="#!">M.Tech.</a></li>
+	          <li><a href="#!">3 Years M.Tech.</a></li>
+	          <li><a href="#!">Executive M.Tech.</a></li>
+	          <li><a href="#!">M.Sc. &amp; M.Sc. Tech.</a></li>
+	          <li><a href="#!">MBA</a></li>
+	          <li><a href="#!">Executive MBA</a></li>
+	          <li><a href="#!">MA</a></li>
+	          <li><a href="#!">PhD (Regular)</a></li>
+	          <li><a href="#!">PhD (Part-Time)</a></li>
+	        </ul>
+	      </li>
+	      <li><a href="#!">Faculty</a></li>
+	      <li><a href="#!">Research</a></li>
+	      <li><a href="#!">Innovation</a></li>
+	      <li><a href="#!">Placements</a></li>
+	      <li><a href="#!">Media &amp; News</a></li>
+	      <li>
+	        <a href="#!">Students</a>
+	        <ul class="submenu">
+	          <li><a href="#!">Student's Welfare</a></li>
+	          <li><a href="#!">Parent Portal</a></li>
+	          <li><a href="#!">Online Payment</a></li>
+	        </ul>
+	      </li>
+	      <li><a href="#!">Alumni</a></li>
+	    </ul>
+	  </div>
+	</div>
+	<!-- #main-navbar -->
+	
+	<main>
+		<div class="container">
+			<div class="content">
+				<h3 class="heading">Introduction</h3>
+				<hr/>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum provident esse id saepe, corporis incidunt a! Ut, consequatur! Modi, eligendi. Odit doloremque quo voluptates nobis, quidem id similique, consectetur aut saepe rem temporibus. Quae magnam temporibus voluptates odit incidunt totam. Consequatur quam nihil, sunt dolores quod error ducimus quae!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, possimus. Minus quasi quibusdam iure ipsum quae porro eligendi consequatur quia non officia reprehenderit, magnam eaque temporibus, recusandae, vero voluptatum ducimus sequi accusantium nulla ipsa doloremque molestiae facilis ullam alias. Nemo sit sunt id sapiente odio eligendi a earum aliquid, eos, illum architecto atque rem. Illum hic ipsum at odit perferendis commodi nostrum veritatis voluptate sed perspiciatis, dicta aliquid, maiores eligendi atque rem, corrupti iusto tempore sint excepturi. Quam, voluptates vitae.</p>
+				<h3 class="heading">The Problem &amp; Solution</h3>
+				<hr/>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam qui nulla laudantium non! Labore, vel nihil. Explicabo, culpa expedita eius quisquam cum deleniti. A rerum officia atque deserunt suscipit iusto perferendis amet provident non expedita repellendus, reiciendis sed consectetur quos veritatis totam unde, eligendi possimus fugit hic cumque et autem? Nobis molestias odio neque fugit possimus perspiciatis a ab. Incidunt, ea magni voluptatibus dolorem explicabo et fugit consequatur hic. Minima neque dolor modi error dolores at dicta, eius earum quas recusandae a esse rerum sint veritatis odio! Laudantium minus ea atque sint rem ut neque voluptates dolorem! Dolorum accusantium repellat totam quaerat, ex ratione, ipsam quo magnam sequi possimus id dignissimos distinctio porro veritatis asperiores voluptates! Aspernatur fuga facere incidunt.</p>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	
+
+</body>
+</html>
