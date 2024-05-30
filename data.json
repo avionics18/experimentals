@@ -77,6 +77,10 @@
     {
       "title": "Jquery Responsive Navbar [Updated]",
       "url": "./jquery-navbar/index.html"
+    },
+    {
+      "title": "Custom News Scroller",
+      "url": "./custom-news/index.html"
     }
   ]
 }
