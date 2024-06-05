@@ -1,0 +1,282 @@
+:root {
+  --primary: hsl(218, 67%, 47%);
+  --primary-dark: hsl(218, 67%, 27%);
+  --light: #ebebeb;
+  --dark: #333333;
+  --white: #ffffff;
+  --black: #000000;
+  --shadow-base: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/*:root {
+  --primary: hsl(10, 67%, 47%);
+  --primary-dark: hsl(10, 67%, 27%);
+  --light: #ebebeb;
+  --dark: #333333;
+  --white: #ffffff;
+  --black: #000000;
+  --shadow-base: 0 4px 6px rgba(0,0,0,0.1);
+}*/
+
+* {
+  box-sizing: border-box;
+/*  outline: 1px solid rgba(255,0,0,0.15);*/
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light);
+}
+
+.container {
+  max-width: 1280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+}
+
+nav.navbar {
+  background: linear-gradient(0deg, var(--black), var(--primary-dark));
+  font-size: 14px;
+}
+
+.navbar-res-header {
+  display: none;
+}
+
+#menu-toggler {
+  display: none;
+}
+
+nav.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.menu {
+  display: flex;
+}
+
+ul.menu li {
+  position: relative;
+}
+
+ul.menu > li > a {
+  color: var(--white);
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.25s;
+}
+
+ul.menu > li > a:hover,
+ul.menu > li > a.active {
+  background-color: var(--primary);
+}
+
+ul.menu > li > a > svg.feather-chevron-down {
+  margin-left: 4px;
+  transition: 0.25s;
+}
+
+ul.menu > li > a.active > svg.feather-chevron-down {
+  transform: rotate(180deg);
+}
+
+.navbar ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  min-width: 200px;
+  padding: 8px 0;
+  box-shadow: var(--shadow-base);
+}
+
+ul.submenu::before {
+  content: " ";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -4px;
+  left: 24px;
+}
+
+ul.submenu > li > a {
+  display: block;
+  color: var(--black);
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+
+/*  ===Mobile Screen===  */
+@media screen and (max-width: 425px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-res-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .navbar-res-header span {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  #menu-toggler {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+    width: 44px;
+    height: 44px;
+  }
+
+  #menu-toggler .feather-x {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: none;
+    margin: 16px 0;
+    flex-direction: column;
+  }
+
+  .navbar ul.submenu {
+    position: initial;
+  }
+
+  .navbar ul.submenu::before {
+    top: 46px;
+  }
+}
+
+
+
+/* ===MEGAMENU=== */
+.megamenu {
+  display: none;
+  padding: 1.5rem 0;
+  background-color: var(--white);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  box-shadow: var(--shadow-base);
+}
+
+.megamenu ul li {
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid hsl(218, 67%, 77%);
+}
+
+.megamenu ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.megamenu ul li a {
+  text-decoration: none;
+}
+
+.megamenu ul li a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  background-color: hsl(218, 67%, 97%);
+}
+
+.card .text-hide {
+  visibility: hidden;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-base {
+  gap: 16px;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+
+
+
+
+/* ===EXTRAS=== */
+header {
+  padding: 1rem 0;
+  background: linear-gradient(0deg, rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('./iitism_cover.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.logo {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow-base);
+}
+
+.logo img {
+  width: 80px;
+  margin-right: 12px;
+}
+
+.logo .logo__content .logo__content-title {
+  display: inline-block;
+  font-family: 'Oswald', sans;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.logo .logo__content .logo__content-subtitle {
+  display: inline-block;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 100%;
+  }
+
+  .logo .logo__content .logo__content-title {
+    font-size: 1.5rem;
+  }
+}

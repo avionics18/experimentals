@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Indian_Institute_of_Technology_%28Indian_School_of_Mines%29%2C_Dhanbad_Logo.png" alt="IIT ISM Logo">
+        <div class="logo__content">
+          <span class="logo__content-title">IIT (ISM), DHANBAD</span>
+          <span class="logo__content-subtitle">Indian Institute of Technology (Indian School of Mines), Dhanbad</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-res-header">
+        <span>MENU</span>
+        <button id="menu-toggler">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul id="main-menu" class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li class="has-megamenu">
+          <a href="#!">Administration<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down ml-8"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+          <div class="megamenu">
+            <div class="container d-grid grid-cols-4 gap-base">
+              <div class="card">
+                <h4>Administration</h4>
+                <ul>
+                  <li><a href="#!">Visitor</a></li>
+                  <li><a href="#!">Council of NITs</a></li>
+                  <li><a href="#!">Board of Governers</a></li>
+                  <li><a href="#!">Senate</a></li>
+                  <li><a href="#!">Chairman</a></li>
+                  <li><a href="#!">Director</a></li>
+                  <li><a href="#!">Registrar</a></li>
+                  <li><a href="#!">Deans</a></li>
+                  <li><a href="#!">Head of Departments</a></li>
+                  <li><a href="#!">Institute Functionaries</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Committees</h4>
+                <ul>
+                  <li><a href="#!">Finanace Committee</a></li>
+                  <li><a href="#!">Building &amp; Works Committee</a></li>
+                  <li><a href="#!">Grievance Redressal Committees</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Minutes of Meeting</h4>
+                <ul>
+                  <li><a href="#!">Minutes of BoG Meetings</a></li>
+                  <li><a href="#!">Minutes of FC Meetings</a></li>
+                  <li><a href="#!">Minutes of Senate Meetings</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Others</h4>
+                <ul>
+                  <li><a href="#!">Organization Chart</a></li>
+                  <li><a href="#!">Office Administration</a></li>
+                  <li><a href="#!">Budget Estimates</a></li>
+                  <li><a href="#!">Miscellaneous</a></li>
+                </ul>
+              </div>
+            </div><!-- .container -->
+          </div><!-- .megamenu -->
+        </li><!-- li.has-megamenu -->
+        <li class="has-megamenu">
+          <a href="#!">Students<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down ml-8"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+          <div class="megamenu">
+            <div class="container d-grid grid-cols-4 gap-base">
+              <div class="card">
+                <h4>Continuing Students</h4>
+                <ul>
+                  <li><a href="#!">Student's Welfare Office</a></li>
+                  <li><a href="#!">E-Resources</a></li>
+                  <li><a href="#!">Scholarships &amp; Awards</a></li>
+                  <li><a href="#!">Academic Calendar</a></li>
+                  <li><a href="#!">Class Time Table</a></li>
+                  <li><a href="#!">Fee Structure</a></li>
+                  <li><a href="#!">Notices/Information</a></li>
+                  <li><a href="#!">Office Orders</a></li>
+                  <li><a href="#!">Hostel</a></li>
+                  <li><a href="#!">Anti-Ragging Campaign</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <ul>
+                  <h4 class="text-hide">Continuing Students</h4>
+                  <li><a href="#!">UG Regulations</a></li>
+                  <li><a href="#!">PG Regulations</a></li>
+                  <li><a href="#!">Formats & Forms</a></li>
+                  <li><a href="#!">Documents & Certificates</a></li>
+                  <li><a href="#!">Institute Digital Repository</a></li>
+                  <li><a href="#!">Training &amp; Placement Cell</a></li>
+                  <li><a href="#!">Cultural Society</a></li>
+                  <li><a href="#!">IEEE Student Branch</a></li>
+                  <li><a href="#!">Convocation</a></li>
+                  <li><a href="#!">ALCOM-Alumni Affairs</a></li>
+                </ul>
+              </div>
+              <div class="card col-span-2">
+                <h4>Prospective Students</h4>
+                <ul>
+                  <li><a href="#!">Admissions</a></li>
+                  <li><a href="#!">Academic Programme</a></li>
+                  <li><a href="#!">Campus Life</a></li>
+                  <li><a href="#!">Scholarships &amp; Awards</a></li>
+                  <li><a href="#!">Placement Results</a></li>
+                  <li><a href="#!">Virtual Tour</a></li>
+                  <li><a href="#!">MNIT Jaipur Admission Counselling Hub (MAC)</a></li>
+                  <li><a href="#!">Joint Seat Allocation Authority (JoSAA)</a></li>
+                  <li><a href="#!">Central Seat Allocation Board (CSAB)</a></li>
+                  <li><a href="#!">Direct Admission of Students Abroad (DASA)</a></li>
+                  <li><a href="#!">Centralized counselling for M.Tech./M.Arch./M.Plan. Admissions (CCMT)</a></li>
+                  <li><a href="#!">Centralized counselling for M.Sc./M.Sc.(Tech.) Admissions (CCMN)</a></li>
+                </ul>
+              </div>
+            </div><!-- .container -->
+          </div><!-- .megamenu -->
+        </li><!-- li.has-megamenu -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function() {
+      function activateMenu() {
+        // Navbar Logic
+        $(".menu > li.has-megamenu > a").click(function(e) {
+          e.preventDefault();
+          // <a> logic
+          $(".menu > li.has-megamenu > a").not($(this)).removeClass("active");
+          $(this).toggleClass("active");
+          // Dropdown Logic
+          $(".megamenu").not($(this).next()).hide();
+          $(this).next().slideToggle();
+        });
+
+        // Click Outside Detection
+        $(document).click(function(e) {
+          let listItems = $(".menu li.has-megamenu");
+          if(!($(e.target).closest(listItems).length)) {
+            $(".megamenu").slideUp();
+            $(".menu > li > a.active").removeClass("active");
+          }
+        });
+
+        // Mobile Hamburger Menu Toggler
+        $("#menu-toggler").click(function() {
+          $(this).children(".feather-x").toggle();
+          $(this).children(".feather-menu").toggle();
+          $(".menu").slideToggle();
+        });
+      }
+
+      activateMenu();
+    });
+  </script>
+</body>
+</html>

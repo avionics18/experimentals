@@ -1,0 +1,102 @@
+{
+    "menus": [
+        {
+            "title": "Home",
+            "url": "./mega.html",
+            "icon": "fa-home",
+            "hasChildren": false,
+            "submenu": []
+        },
+        {
+            "title": "About Us",
+            "url": "/about-us",
+            "icon": "",
+            "hasChildren": true,
+            "submenu": [
+                {
+                    "title": "Overview",
+                    "url": "/about-us/overview"
+                },
+                {
+                    "title": "Administration",
+                    "url": "/about-us/administration"
+                },
+                {
+                    "title": "Reports",
+                    "url": "/about-us/reports"
+                },
+                {
+                    "title": "Statutes of IIT(ISM)",
+                    "url": "/about-us/statutes-of-iit-ism"
+                },
+                {
+                    "title": "Minutes of BoG Meeting",
+                    "url": "/about-us/min-of-bog-meeting"
+                }
+            ]
+        },
+        {
+            "title": "Admissions",
+            "url": "/admissions",
+            "icon": "",
+            "hasChildren": true,
+            "submenu": [
+                {
+                    "title": "B.Tech.",
+                    "url": "/admissions/b-tech"
+                },
+                {
+                    "title": "M.Tech.",
+                    "url": "/admissions/m-tech"
+                },
+                {
+                    "title": "MSc.",
+                    "url": "/admissions/msc"
+                },
+                {
+                    "title": "PhD.",
+                    "url": "/admissions/phd"
+                },
+                {
+                    "title": "MBA.",
+                    "url": "/admissions/mba"
+                }
+            ]
+        },
+        {
+            "title": "Research",
+            "url": "/research",
+            "icon": "",
+            "hasChildren": false,
+            "submenu": []
+        },
+        {
+            "title": "Innovation",
+            "url": "/innovation",
+            "icon": "",
+            "hasChildren": false,
+            "submenu": []
+        },
+        {
+            "title": "Students Section",
+            "url": "/students-section",
+            "icon": "",
+            "hasChildren": false,
+            "submenu": []
+        },
+        {
+            "title": "Placements",
+            "url": "/placements",
+            "icon": "",
+            "hasChildren": false,
+            "submenu": []
+        },
+        {
+            "title": "Contact",
+            "url": "/contact",
+            "icon": "",
+            "hasChildren": false,
+            "submenu": []
+        }
+    ]
+}

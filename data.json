@@ -75,12 +75,16 @@
       "url": "./intersectionObs/index.html"
     },
     {
-      "title": "Jquery Responsive Navbar [Updated]",
+      "title": "Jquery Multi-Level Navbar",
       "url": "./jquery-navbar/index.html"
     },
     {
       "title": "Custom News Scroller",
       "url": "./custom-news/index.html"
+    },
+    {
+      "title": "Jquery Colleges Navbar (Sliding)",
+      "url": "./jquery-colleges-navbar/index.html"
     }
   ]
 }
